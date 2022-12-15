@@ -82,11 +82,18 @@ When plugging it into your PC running Linux, you should see 3 partitions being m
 
 The SD-card does in fact contain 4 partitions:
 
-[Screenshot of fdisk -l here]
+```
+        Device Boot      Start         End      Blocks  Id System
+/dev/mmcblk0p1              33       32800     1048576  83 Linux
+Partition 1 does not end on cylinder boundary
+/dev/mmcblk0p2           32801       65568     1048576  83 Linux
+Partition 2 does not end on cylinder boundary
+/dev/mmcblk0p3           65569       67616       65536   c Win95 FAT32 (LBA)
+Partition 3 does not end on cylinder boundary
+/dev/mmcblk0p4           67617      973968    29003264  83 Linux
+```
 
 these are used for various things. The ones we are interested in, are the first 2. Upon closer investigation you will realize 2 things. They are Linux installs and they seem to be identical. 
-
-[Screenshot of files here]
 
 The partition we are interrested in, is the first one. This is the partition the QC will use to run it's software. The second one is for redundancy when something goes wrong in the update process from what I understand.
 
