@@ -232,7 +232,7 @@ Now replace the `ModelRepo.xml` file inside `/opt/neuraldsp` with the new file. 
 
 Finally reboot your QC, now you should have all models (except captures) renamed to their real names.
 
-[Add screenshot]
+![IMG20221218151130](https://user-images.githubusercontent.com/55881698/208303182-8554e62c-96a9-41f2-be0d-1f1f4f564506.jpg)
 
 # Accessing your backup
 
