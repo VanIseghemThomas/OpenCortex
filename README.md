@@ -66,6 +66,10 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 # Opening a shell and gaining root access
 
+## Summary
+
+When searching for updates, the Quad Cortex uses a Python script to query NDSP's API for new updates. This can be used as an entry point for running custom code. We will swap out this file out for a custom Python script that allows us to open a reverse shell. We can use that reverse shell to give us persistent access. 
+
 ## Step 1: take out the SD-card
 
 Have you ever noticed that a Raspberry-Pi uses an SD-card to boot from, well the QC does pretty much the same in a bit more sophisticated way. I could go into detail how this works but that's for another section.
