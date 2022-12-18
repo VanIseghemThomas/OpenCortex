@@ -180,8 +180,10 @@ Now time for some cleanup.
 ## Step 6: restoring the update script
 Now that you have persistent access, there is no need to have the exploit anymore. You can keep it, but it poses a security risk and disables the update functionality.
 
+To restore this, just remove the custom Python script, and replace it back with the original one. This can be done with the following commands:
+
 ```console
-rm cloud_updater_custom.py
+rm cloud_updater.py
 mv cloud_updater_backup.py cloud_updater.py
 ```
 
