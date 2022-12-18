@@ -32,12 +32,12 @@ Before I start of listing everything that is discovered, I want to make clear th
     
     - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
 
-    - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets.
+    - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the content's aren't really relevant, I just need to find a way to reference the files correctly.
 
 
 - Creating an external file manager
 
-    - Once deleting and adding presets are confirmed working, an app (desktop/mobile) can be created to interface with it. In order to make that work, the firmware would need some additions to make that work. But that is totaly possible to make work.
+    - Once deleting and adding presets are confirmed working, an app (desktop/mobile) can be created to interface with it. In order to make that work, the firmware would need some additions to make that work. But that is totaly possible.
 
 
 - Creating an external editor
@@ -80,7 +80,7 @@ To get access to the SD-card, you'll have to take of the back of the QC. This is
 
 ## Step 2: mounting the SD-card
 **For this step it is useful to have a Linux system to work from.**
-When plugging the SD-card into your PC running Windows, it will prompt you that the SD-card is broken and you should format it. **Do not do this!** The reason it does this, is because you're trying to read Linux filesystems that are not supported on Windows. There might be ways to get around that but I'd still recommend just using a Linux install to do this. The guide will continue with this assumption.
+When plugging the SD-card into your PC running Windows, it will prompt you that the SD-card is broken and you should format it. **Do not do this!** The reason it does this, is because you're trying to read Linux filesystems that are not supported on Windows. There might be ways to get around that but I'd still recommend just using a Linux system (or a VM) to do this. The guide will continue with this assumption.
 
 When plugging it into your PC running Linux, you should see 3 partitions being mounted in your file manager. With a bit of luck there might be 4.
 
@@ -132,7 +132,7 @@ Note: this might not work if an actual update is available.
 
 Before doing that, we'll need to listen for the reverse shell. This can be done using a tool called netcat. Open up a terminal and type `nc -lvnp 4444` (or your custom set port).
 
-Now on the QC, go to `Settings -> Device Options -> Device Updates`. When press the button to start looking for updates, your PC should open a reverse shell.
+Now on the QC, go to `Settings -> Device Options -> Device Updates`. When you press the button to start looking for updates, your PC should open a reverse shell.
 
 It should look something like this:
 
@@ -160,7 +160,7 @@ So to connect to your QC you can do the following
 ```console
 ssh root@<QC-ip-address> -p 57284
 ```
-It will prompt you for your password and after that for a fingerprint, just type "yes" and enter and:
+It will prompt you for your password and after that for a fingerprint, just type "yes", enter and:
 
 ```console
 Welcome to 
