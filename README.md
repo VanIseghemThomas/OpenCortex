@@ -149,6 +149,8 @@ Make sure to be responsible now.
 
 ## Step 5: persistent access
 
+[This might be automated in the future using the exploit script]
+
 When running the `whoami` commmand, you can see that the Python script was being ran as root. This means you now have root access! With this you can do pretty much anything you want, including changing the password to something else.
 
 Run the command `passwd`. This will prompt you to change the root user's password, without confirming the current password.
@@ -157,9 +159,12 @@ You are now able to connect to your QC using SSH as root! Isn't that wonderfull!
 
 So to connect to your QC you can do the following
 
+*Ip address can be found under `settings -> Wi-Fi`*
+
 ```console
 ssh root@<QC-ip-address> -p 57284
 ```
+
 It will prompt you for your password and after that for a fingerprint, just type "yes", enter and:
 
 ```console
@@ -189,7 +194,49 @@ mv cloud_updater_backup.py cloud_updater.py
 
 Now reboot the QC and test if the updater works like it's supposed to.
 
+# File access
+
+Still looking for the best way to do this, currenly using the `scp` command to send and receive files from the QC.
+
+Example usage:
+
+#### from PC to QC:
+```console
+scp -P 57284 <QC-ip-address>:<file-path>
+```
+
+#### from QC to PC
+```console
+scp -P 57284 <PC-ip-address>:<file-path>
+```
+
 # Editing the default model names
 
-[Under construction, come back soon]
+One thing bothering me (and I think a lot of other people) is the fact that companies like NDSP aren't allowed to ship their models under the real name it is based on. Luckly they keep track of it in the actual model list, but it isn't displayed to the user.
+
+The models and their respective categories, names and parameters, are stored inside `/opt/neuraldsp/ModelRepo.xml`. In order to rename these files to the real deal, you've got a couple of options.
+
+- Rename them manually inside the XML file
+
+- Use the `model_renamer.py` script in this repo to generate the XML file
+
+    - Usage:
+    ```console
+    python model_renamer.py <original-modelrepo> <output-file-path>
+    ```   
+
+- Use the pre-generated XML file inside `Model Repositories` (make sure to match it to your CorOS verion)
+
+
+Now replace the `ModelRepo.xml` file inside `/opt/neuraldsp` with the new file. Make sure this is called `ModelRepo.xml`.
+
+Finally reboot your QC, now you should have all models (except captures) renamed to their real names.
+
+[Add screenshot]
+
+# Accessing your backup
+
+Your backup is available as a compressed archive under `/media/p4/downloaded_backup.tar.gz`
+It only contains your personal files such as captures, presets, ... It does not contain any system files, so it can't be used as a complete system restore backup. 
+
 
