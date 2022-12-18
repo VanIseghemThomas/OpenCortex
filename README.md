@@ -24,7 +24,6 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - Calibrating / testing the touchscreen
 
-
 ## Currently being worked on
 - Managing your files.
     
@@ -49,6 +48,10 @@ Before I start of listing everything that is discovered, I want to make clear th
     - Would depend on the external file manager.
 
     - Once all of this is finished, the app for can be built.
+
+- Expanding preset slots
+
+    - Got a pretty good idea how this can be done, still have to confirm it working.
 
 ## Things that might work in the future
 - Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
