@@ -210,7 +210,7 @@ scp -P 57284 <QC-ip-address>:<file-path>
 
 #### from QC to PC
 ```console
-scp -P 57284 <PC-ip-address>:<file-path>
+scp <PC-ip-address>:<file-path>
 ```
 
 # Editing the default model names
