@@ -24,6 +24,8 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - Calibrating / testing the touchscreen
 
+- Running a webserver
+
 ## Currently being worked on
 - Managing your files.
     
