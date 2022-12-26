@@ -18,9 +18,9 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - Getting access to your backup to keep it yourself.
 
-- Deleting presets from another device (Does not yet update in the UI but I know why, still has to be confirmed working)
+- Deleting / adding presets from another device without reboot.
 
-- Detecting preset changes and which one is loaded.
+- Detecting preset switches and which one is loaded.
 
 - Calibrating / testing the touchscreen
 
@@ -29,31 +29,25 @@ Before I start of listing everything that is discovered, I want to make clear th
 ## Currently being worked on
 - Managing your files.
     
-    - Adding presets (should work the same as deleting)
-    
     - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
 
-    - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the content's aren't really relevant, I just need to find a way to reference the files correctly.
+    - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the contents aren't really relevant, I just need to find a way to reference the files correctly.
 
 
 - Creating an external file manager
 
-    - Once deleting and adding presets are confirmed working, an app (desktop/mobile) can be created to interface with it. In order to make that work, the firmware would need some additions to make that work. But that is totaly possible.
+    - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
 
 
 - Creating an external editor
     
-    - Preset file stucture is close to being fully reverse-engineered.
+    - Preset file stucture is fully reverse-engineered.
+    
+    - Building the UI
     
     - Testing external editing of presets and it's limitations.
 
-    - Would depend on the external file manager.
-
-    - Once all of this is finished, the app for can be built.
-
-- Expanding preset slots
-
-    - Got a pretty good idea how this can be done, still have to confirm it working.
+- Building an RDP solution to use the native CorOS UI live on your pc.
 
 ## Things that might work in the future
 - Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
@@ -67,6 +61,10 @@ Before I start of listing everything that is discovered, I want to make clear th
 - SD-card upgrade: on paper, when partitioning the SD-card correctly and flashing those with the corresponding .img files (you can clone from the original), you should be able to
 
 - Creating a OpenCortex update URL that can be accessed by the native update menu. 
+
+- Expanding preset slots
+
+    - Got a pretty good idea how this can be done, still have to confirm it working.
 
 
 # Opening a shell and gaining root access
