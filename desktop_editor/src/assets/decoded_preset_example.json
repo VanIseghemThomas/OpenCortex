@@ -1,0 +1,4044 @@
+{
+    "hash": 264918185,
+    "date": "2022-09-09T17:09:07Z",
+    "volume": 1,
+    "pan": 0.5,
+    "authorName": "thomas.van.iseghem@gmail.com",
+    "authorId": "937ed671-fe7c-4972-94c4-433038f4d560",
+    "tempo": 89,
+    "chains": [
+        {
+            "inPortid": 1,
+            "outPortid": 19,
+            "models": [
+                {
+                    "hash": 3007,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                },
+                                {
+                                    "floatValue": 0.429999977350235
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                },
+                                {
+                                    "floatValue": 0.5199999809265137
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                },
+                                {
+                                    "floatValue": 0.5299999117851257
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 14000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                },
+                                {
+                                    "floatValue": 0.6000077128410339
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                },
+                                {
+                                    "floatValue": 0.619999885559082
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                },
+                                {
+                                    "floatValue": 0.5099999904632568
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                },
+                                {
+                                    "floatValue": 0.5800078511238098
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                },
+                                {
+                                    "floatValue": 0.4799998998641968
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                },
+                                {
+                                    "stringValue": "cc00b44a16c96854096d818d94cc4c90f392981a0bfddaddb8a74a40d49fe2edCA M6Rifle 8"
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                },
+                {
+                    "hash": 26001,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                },
+                                {
+                                    "floatValue": 0.47624942660331726
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                },
+                                {
+                                    "floatValue": 0.30149441957473755
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                },
+                                {
+                                    "floatValue": 0.6621649265289307
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 21003,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Dynamic 57"
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                },
+                                {
+                                    "stringValue": "NG_810 Amped SVT Aln 70s_Ribbon 10"
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                },
+                                {
+                                    "floatValue": 0.50206458568573
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                },
+                                {
+                                    "floatValue": 0.4000000059604645
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "splitControlPoints": [
+                {
+                    "split": -1,
+                    "mix": -1
+                }
+            ],
+            "splitter": [
+                {
+                    "hash": 10002,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "mixer": [
+                {
+                    "hash": 11000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "outputControl": [
+                {
+                    "hash": 23000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        },
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ],
+            "splitBypass": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "mixBypass": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "combinedSplitter": [
+                {
+                    "hash": 10004,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "inputControl": [
+                {
+                    "hash": 28000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                },
+                                {
+                                    "floatValue": 0.29699987173080444
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inPortid": 0,
+            "outPortid": 0,
+            "models": [
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                }
+            ],
+            "outputControl": [
+                {
+                    "hash": 23000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        },
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ],
+            "inputControl": [
+                {
+                    "hash": 28000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inPortid": 0,
+            "outPortid": 0,
+            "models": [
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                }
+            ],
+            "splitControlPoints": [
+                {
+                    "split": -1,
+                    "mix": -1
+                }
+            ],
+            "splitter": [
+                {
+                    "hash": 10002,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "mixer": [
+                {
+                    "hash": 11000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "outputControl": [
+                {
+                    "hash": 23000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        },
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ],
+            "splitBypass": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "mixBypass": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "combinedSplitter": [
+                {
+                    "hash": 10004,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                },
+                                {
+                                    "floatValue": 0.49547526240348816
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ]
+                }
+            ],
+            "inputControl": [
+                {
+                    "hash": 28000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "inPortid": 0,
+            "outPortid": 0,
+            "models": [
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                },
+                {
+                    "hash": 0
+                }
+            ],
+            "outputControl": [
+                {
+                    "hash": 23000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                },
+                                {
+                                    "floatValue": 0.7692307829856873
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                },
+                                {
+                                    "floatValue": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        },
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ],
+            "inputControl": [
+                {
+                    "hash": 28000,
+                    "params": [
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                },
+                                {
+                                    "floatValue": 0.30000001192092896
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                },
+                                {
+                                    "floatValue": 1
+                                }
+                            ]
+                        },
+                        {
+                            "expression": 0,
+                            "expressionMin": 0,
+                            "expressionMax": 1,
+                            "sceneMode": false,
+                            "paramValues": [
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                },
+                                {
+                                    "floatValue": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "bypassExpression": [
+                        {
+                            "expressionMax": 1
+                        }
+                    ],
+                    "expressionBypassInfo": [
+                        {
+                            "type": 2,
+                            "delayMs": 600
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "Not Mandatory"
+    ],
+    "sceneTempo": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+    ],
+    "sceneLabels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "midiMessages": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "midiMessagesGeneral": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "bypass": [
+        {
+            "colBypass": [
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            ]
+        },
+        {
+            "colBypass": [
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            ]
+        },
+        {
+            "colBypass": [
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            ]
+        },
+        {
+            "colBypass": [
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                {
+                    "sceneBypass": [
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                }
+            ]
+        }
+    ],
+    "tempoProgramData": [
+        {
+            "hash": 25000,
+            "params": [
+                {
+                    "expression": 0,
+                    "expressionMin": 0,
+                    "expressionMax": 1,
+                    "sceneMode": false,
+                    "paramValues": [
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        },
+                        {
+                            "floatValue": 0.4000000059604645
+                        }
+                    ]
+                },
+                {
+                    "expression": 0,
+                    "expressionMin": 0,
+                    "expressionMax": 1,
+                    "sceneMode": false,
+                    "paramValues": [
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        }
+                    ]
+                },
+                {
+                    "expression": 0,
+                    "expressionMin": 0,
+                    "expressionMax": 1,
+                    "sceneMode": false,
+                    "paramValues": [
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        },
+                        {
+                            "floatValue": 0
+                        }
+                    ]
+                }
+            ],
+            "bypassExpression": [
+                {
+                    "expressionMax": 1
+                }
+            ]
+        }
+    ],
+    "layoutCode_1": [
+        15
+    ],
+    "layoutCode_2": [
+        0
+    ],
+    "createdVersion": [
+        "1.3.3"
+    ],
+    "modifiedVersion": [
+        "1.4.0"
+    ],
+    "oldestCompatibleVersion": [
+        "1.4.0"
+    ],
+    "cloudId": [
+        ""
+    ],
+    "description": [
+        ""
+    ],
+    "stompModeAssignments": [
+        {},
+        {
+            "column": 3,
+            "stompIndex": 6
+        },
+        {
+            "column": 7,
+            "stompIndex": 1
+        }
+    ]
+}
