@@ -8,10 +8,10 @@
     </div>
     
     <div v-if="preset" class="grid">
-        <chain :chain="preset.chains[0]"></chain>
-        <chain :chain="preset.chains[1]"></chain>
-        <chain :chain="preset.chains[2]"></chain>
-        <chain :chain="preset.chains[3]"></chain>
+        <chain :chain="preset.chains[0]" @show-params="showParams"></chain>
+        <chain :chain="preset.chains[1]" @show-params="showParams"></chain>
+        <chain :chain="preset.chains[2]" @show-params="showParams"></chain>
+        <chain :chain="preset.chains[3]" @show-params="showParams"></chain>
     </div>
 </template>
 
@@ -24,12 +24,21 @@ export default defineComponent({
     components: {
         Chain
     },
+
+    emits: ['show-params'],
+
     props: {
         preset: {
             type: Object,
             required: true
         }
-    }
+    },
+
+    methods: {
+        showParams(model: any, modelData: any){
+            this.$emit('show-params', model, modelData);
+        }
+    },
 })
 </script>
 
@@ -44,6 +53,8 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    margin-bottom: 2rem;
 
 }
 

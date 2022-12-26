@@ -6,7 +6,8 @@
             <div class="chain-objects" v-for="chainObject in chainObjects" :key="chainObject">
                 <PresetBlock 
                     v-if="chainObject.hash !== undefined"
-                   :model="chainObject">
+                   :model="chainObject"
+                   @show-params="showParams">
                 </PresetBlock>
                 <div 
                     class="control-point" 
@@ -32,12 +33,15 @@ export default defineComponent({
     components: {
         PresetBlock
     },
+
     props: {
         chain: {
             type: Object,
             required: true
         }
     },
+
+    emits: ['show-params'],
 
     data(){
         return{
@@ -65,6 +69,12 @@ export default defineComponent({
             }
 
             this.chainObjects.push(cp);
+        }
+    },
+
+    methods:{
+        showParams(model: any, modelData: any){
+            this.$emit('show-params', model, modelData);
         }
     }
 })    

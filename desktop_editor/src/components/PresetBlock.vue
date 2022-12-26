@@ -2,7 +2,8 @@
     <div class="block">
         <button class="block-btn" 
             :class="{ isEmpty: model.hash == 0 }"
-            :style="{ background: blockColor }">
+            :style="{ background: blockColor }"
+            @click="showParams">
             <!-- <img src="rsquare.png" alt="block"> -->
             {{ modelData.model._attributes.name }}
         </button>
@@ -20,6 +21,8 @@ export default defineComponent({
             required: true
         },
     },
+
+    emits: ['show-params'],
 
     data(){
         return {
@@ -131,6 +134,11 @@ export default defineComponent({
             else{
                 this.blockColor = "rgba(0,0,0,0)";
             }
+        },
+
+        showParams(){
+            // Emit back to the parent component
+            this.$emit('show-params', this.model, this.modelData);
         }
     }
 });
