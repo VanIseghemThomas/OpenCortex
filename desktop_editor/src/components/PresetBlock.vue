@@ -139,7 +139,7 @@ export default defineComponent({
 <style scoped lang="scss">
 .block{
     width: 4rem;
-    height: 100%;
+    height: 4rem;
     
 
     border-radius: 1rem;
@@ -164,9 +164,13 @@ export default defineComponent({
         background-color: rgba(0, 162, 255, 0);
         font-size: 1rem;
 
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
         &.isEmpty:hover{
             background-color: rgba(0, 162, 255, 0.2) !important;
-            cursor: pointer;
         }
     }
 
