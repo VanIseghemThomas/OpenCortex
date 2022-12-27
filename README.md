@@ -14,6 +14,8 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - Gaining persistent access over a network connection.
 
+- Building an RDP solution to use the native CorOS UI live on your pc. [TBA]
+
 - Renaming the built in amps, pedals, etc. to whatever you like. (reboot required for changes to take effect)
 
 - Getting access to your backup to keep it yourself.
@@ -46,8 +48,6 @@ Before I start of listing everything that is discovered, I want to make clear th
     - Building the UI
     
     - Testing external editing of presets and it's limitations.
-
-- Building an RDP solution to use the native CorOS UI live on your pc.
 
 ## Things that might work in the future
 - Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
