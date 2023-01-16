@@ -6,9 +6,16 @@ Developing good software is hard, waiting for it might sometimes be equally as h
 ## Disclaimer:
 I am not responsible for any damage that might be done to your unit, software. Doing this might have the potential to void your warranty. This is a project for enthousiasts who like to tinker like myself. I do not intend to cause any difficulties for NDSP / myself and will approach this from an ethical standpoint. I do not condone any misuse of this project. This is purely for educational and quality of life purposes only.
 
+### To NDSP
+Unforunately it seems we got of on the wrong foot, for context I (Thomas) got banned on the Discord server for showing a 9 second clip of the RDP solution working and receiving a very positive reaction from the rest of the community. We respect the stance on the matter but not how it was handled. After all, no rules were breached. 
+
+**Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority**
+
+*If you can still read this note, I wasn't contacted yet.*
+
 ## What is already possible (or in better terms discovered)
 
-Before I start of listing everything that is discovered, I want to make clear that this is currently a 1 man project and I'm doing my best to do as much as possible in the time I've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. I'll try to prioritise but roadblocks will be hit.
+Before I start of listing everything that is discovered, I want to make clear that this is currently a 2 man project and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
 
 **Everything you see here is tested as working in practice.**
 
@@ -29,6 +36,10 @@ Before I start of listing everything that is discovered, I want to make clear th
 - Running a webserver
 
 ## Currently being worked on
+
+- Building a Discord server
+    - Free from any censorship about the QC
+
 - Managing your files.
     
     - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
