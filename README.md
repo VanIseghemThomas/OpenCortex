@@ -265,6 +265,8 @@ Finally reboot your QC, now you should have all models (except captures) renamed
 
 # External editor (VNC)
 
+![image](https://user-images.githubusercontent.com/55881698/214691276-bbd161bf-eb72-4f96-87ec-aa4255c75e7e.png)
+
 Since we've figured out how to cross-compile our own binaries, we were able to compile a VNC solution for the Quad Cortex.
 
 The VNC server we compiled is based on [this project](https://github.com/ponty/framebuffer-vncserver). We had to modify the source code a bit to make it work with the touchscreen. But besides that, it is identical. This patch was necesarry because the touchscreen doesn't report it's width and height in a propper way.
