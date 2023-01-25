@@ -269,6 +269,8 @@ Since we've figured out how to cross-compile our own binaries, we were able to c
 
 The VNC server we compiled is based on [this project](https://github.com/ponty/framebuffer-vncserver). We had to modify the source code a bit to make it work with the touchscreen. But besides that, it is identical. This patch was necesarry because the touchscreen doesn't report it's width and height in a propper way.
 
+**Note:** when connected to the QC over VNC, you might notice a dip in framerate on the device itself. This is normal. It is the device trying to encode the video feed and struggling.
+
 *[Installer and auto-run on boot will be added later]*
 
 *For now you can use it the manual way*
