@@ -14,6 +14,7 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 *If you can still read this note, I wasn't contacted yet.*
 
+
 ## What is already possible (or in better terms discovered)
 
 Before I start of listing everything that is discovered, I want to make clear that this is currently a 2 man project and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
@@ -22,7 +23,7 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - Gaining persistent access over a network connection.
 
-- Building an RDP solution to use the native CorOS UI live on your pc. [TBA]
+- Building an RDP solution to use the native CorOS UI live on your pc.
 
 - Renaming the built in amps, pedals, etc. to whatever you like. (reboot required for changes to take effect)
 
@@ -249,9 +250,33 @@ Finally reboot your QC, now you should have all models (except captures) renamed
 
 ![IMG20221218151130](https://user-images.githubusercontent.com/55881698/208303182-8554e62c-96a9-41f2-be0d-1f1f4f564506.jpg)
 
+# External editor (VNC)
+
+Since we've figured out how to cross-compile our own binaries, we were able to compile a VNC solution for the Quad Cortex.
+
+The VNC server we compiled is based on [this project](https://github.com/ponty/framebuffer-vncserver). We had to modify the source code a bit to make it work with the touchscreen. But besides that, it is identical. This patch was necesarry because the touchscreen doesn't report it's width and height in a propper way.
+
+*[Installer and auto-run on boot will be added later]*
+
+*For now you can use it the manual way*
+
+## Installation
+
+In the `External VNC` folder you will find the files `qc_vnc` and `libvncserver.so.1`. Move these to the following locations on the QC:
+
+- **qc_vnc:** `/bin`
+
+- **libvncserver.so.1**: `/lib`
+
+That's it. You can now start the server!
+
+## Usage
+
+```console
+qc_vnc -f /dev/fb0 -t /dev/input/event0
+```
+
 # Accessing your backup
 
 Your backup is available as a compressed archive under `/media/p4/downloaded_backup.tar.gz`
-It only contains your personal files such as captures, presets, ... It does not contain any system files, so it can't be used as a complete system restore backup. 
-
-
+It only contains your personal files such as captures, presets, ... It does not contain any system files, so it can't be modify

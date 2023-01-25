@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# qc_vnc        Starts qc_vnc.
+#
+
+start() {
+	echo -n "Starting qc_vnc: "
+	bin/qc_vnc
+    echo "OK"
+}
+stop() {
+	echo -n "Stopping qc_vnc: "
+	killall qc_vnc
+    echo "OK"
+}
+restart() {
+	stop
+	start
+}
+
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  restart|reload)
+	restart
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
