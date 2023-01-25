@@ -14,6 +14,19 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 *If you can still read this note, I wasn't contacted yet.*
 
+# Table of contents
+
+- [Summary](https://github.com/VanIseghemThomas/OpenCortex#summary)
+
+- [Opening a shell and gaining root access](https://github.com/VanIseghemThomas/OpenCortex#opening-a-shell-and-gaining-root-access)
+
+- [File access](https://github.com/VanIseghemThomas/OpenCortex#file-access)
+
+- [Editing the default model names](https://github.com/VanIseghemThomas/OpenCortex#editing-the-default-model-names)
+
+- [External editor (VNC)](https://github.com/VanIseghemThomas/OpenCortex#external-editor-vnc)
+
+# Summary
 
 ## What is already possible (or in better terms discovered)
 
