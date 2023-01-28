@@ -195,7 +195,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1017" name="EVH 5150 III 100S with EL34 tubes" blob="evh_red" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
+        <Model id="1017" name="EVH 5150 III 100S Red EL34" blob="evh_red" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -476,7 +476,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1098" name="EVH 5150 III 100S with EL34 tubes" blob="evh_blue" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
+        <Model id="1098" name="EVH 5150 III 100S Blue EL34" blob="evh_blue" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -507,7 +507,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1101" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1101" name="Mesa Boogie Lone Star Clean 50W Normal" blob="mesa_lonestar_clean50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -518,7 +518,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1102" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1102" name="Mesa Boogie Lone Star Clean 50W Tweed" blob="mesa_lonestar_clean50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -529,7 +529,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1103" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1103" name="Mesa Boogie Lone Star Clean 100W Normal" blob="mesa_lonestar_clean100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -540,7 +540,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1104" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1104" name="Mesa Boogie Lone Star Clean 100W Tweed" blob="mesa_lonestar_clean100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -551,7 +551,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1105" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1105" name="Mesa Boogie Lone Star Drive 50W Normal" blob="mesa_lonestar_drive50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -563,7 +563,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1106" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1106" name="Mesa Boogie Lone Star Drive 50W Tweed" blob="mesa_lonestar_drive50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -575,7 +575,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1107" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1107" name="Mesa Boogie Lone Star Drive 100W Normal" blob="mesa_lonestar_drive100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -587,7 +587,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1108" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1108" name="Mesa Boogie Lone Star Drive 100W Tweed" blob="mesa_lonestar_drive100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -700,7 +700,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="2.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1118" name="EVH 5150 6L6 Tubes" blob="evh_evh5150iii6l6_blue" tm="Based on EVH® 5150® 6L6 Tubes" style="">
+        <Model id="1118" name="EVH 5150 Blue 6L6" blob="evh_evh5150iii6l6_blue" tm="Based on EVH® 5150® 6L6 Tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -711,7 +711,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1119" name="EVH 5150 6L6 Tubes" blob="evh_evh5150iii6l6_red" tm="Based on EVH® 5150® 6L6 Tubes" style="">
+        <Model id="1119" name="EVH 5150 Red 6L6" blob="evh_evh5150iii6l6_red" tm="Based on EVH® 5150® 6L6 Tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -1060,7 +1060,7 @@
 
     <Category id="3" name="Bass Overdrive">
 
-        <Model id="3000" name="Darkglass Microtubes B3K" blob="b3k" tm="Based on Darkglass® Microtubes B3K®" style="">
+        <Model id="3000" name="Darkglass Micro B3K" blob="b3k" tm="Based on Darkglass® Microtubes B3K®" style="">
          <Parameter name="DRIVE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="GROWL" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="MIDBOOST" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
@@ -1084,7 +1084,7 @@
          <Parameter name="VOLUME" type="float" min="0" max="10" defaultValue="5" units="" />
         </Model>
 
-        <Model id="3006" name="Darkglass Vintage Microtubes" blob="vmt" tm="Based on Darkglass® Vintage Microtubes®" style="">
+        <Model id="3006" name="Darkglass Vintage Micro" blob="vmt" tm="Based on Darkglass® Vintage Microtubes®" style="">
          <Parameter name="DRIVE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="ERA" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="LEVEL" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -1951,7 +1951,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12001" name="Mesa Standard OS Straight with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Standard OS Straight with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12001" name="Mesa Standard OS Straight | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Standard OS Straight with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Cali Stand OS S V30 90s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="" />
@@ -1971,7 +1971,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12002" name="Diezel Front Loaded with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Diezel® Front Loaded with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12002" name="Diezel Front Loaded | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Diezel® Front Loaded with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 D-Cell Front V30 04_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="" />
@@ -1991,7 +1991,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12003" name="EVH Straight with Celestion G12EVH drivers" blob="cab_sim" tm="Based on EVH® Straight with Celestion® G12EVH drivers" style="" skip_self_test="true">
+        <Model id="12003" name="EVH Straight | Celestion G12EVH drivers" blob="cab_sim" tm="Based on EVH® Straight with Celestion® G12EVH drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 EV Straight G12 00s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="" />
@@ -2011,7 +2011,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12004" name="Fender Cab with Celestion A-Type 12” drivers" blob="cab_sim" tm="Based on Fender® Cab with Celestion® A-Type 12” drivers" style="" skip_self_test="true">
+        <Model id="12004" name="Fender Cab | Celestion A-Type 12” drivers" blob="cab_sim" tm="Based on Fender® Cab with Celestion® A-Type 12” drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_212 Fend A-type 00s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="" />
@@ -2031,7 +2031,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12005" name="Marshall 1960B with Celestion Greenback drivers" blob="cab_sim" tm="Based on Marshall® 1960B® with Celestion® Greenback drivers" style="" skip_self_test="true">
+        <Model id="12005" name="Marshall 1960B | Celestion Greenback drivers" blob="cab_sim" tm="Based on Marshall® 1960B® with Celestion® Greenback drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Brit 60B GB 90s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2051,7 +2051,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12006" name="Marshall 1960B with Celestion Pulsonic Greenback drivers" blob="cab_sim" tm="Based on Marshall® 1960B® with Celestion® Pulsonic Greenback drivers" style="" skip_self_test="true">
+        <Model id="12006" name="Marshall 1960B | Celestion Pulsonic Greenback drivers" blob="cab_sim" tm="Based on Marshall® 1960B® with Celestion® Pulsonic Greenback drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Brit 60B GB 71_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2071,7 +2071,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12007" name="Mesa Traditional Straight with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Traditional Straight with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12007" name="Mesa Traditional Straight | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Traditional Straight with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Cali Trad S UKV30 90s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2091,7 +2091,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12008" name="Zilla Cab with Celestion Creamback G12H- 75 drivers" blob="cab_sim" tm="Based on Zilla® Cab with Celestion® Creamback G12H- 75 drivers" style="" skip_self_test="true">
+        <Model id="12008" name="Zilla Cab | Celestion Creamback G12H- 75 drivers" blob="cab_sim" tm="Based on Zilla® Cab with Celestion® Creamback G12H- 75 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_212 Zila CB 16_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2111,7 +2111,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12009" name="Marshall 2551B with Celestion drivers" blob="cab_sim" tm="Based on Marshall® 2551B® with Celestion® drivers" style="" skip_self_test="true">
+        <Model id="12009" name="Marshall 2551B | Celestion drivers" blob="cab_sim" tm="Based on Marshall® 2551B® with Celestion® drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Brit Silver B 70w 87_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2131,7 +2131,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12010" name="Orange PPC412 with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Orange® PPC412 with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12010" name="Orange PPC412 | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Orange® PPC412 with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Range PPC V30 03_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2151,7 +2151,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12011" name="Bogner Ubercab with Celestion T75 drivers" blob="cab_sim" tm="Based on Bogner® Ubercab® with Celestion® T75 drivers" style="" skip_self_test="true">
+        <Model id="12011" name="Bogner Ubercab | Celestion T75 drivers" blob="cab_sim" tm="Based on Bogner® Ubercab® with Celestion® T75 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Banger Uber T75 00s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2171,7 +2171,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12012" name="Suhr Cab with Celestion V-Type drivers" blob="cab_sim" tm="Based on Suhr® Cab with Celestion® V-Type drivers" style="" skip_self_test="true">
+        <Model id="12012" name="Suhr Cab | Celestion V-Type drivers" blob="cab_sim" tm="Based on Suhr® Cab with Celestion® V-Type drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_212 Sur V-type 10_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2191,7 +2191,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12013" name="VOX AC30 with Celestion Pre-Rola Greenback Pulsonic drivers" blob="cab_sim" tm="Based on VOX® AC30® with Celestion® Pre-Rola Greenback Pulsonic drivers" style="" skip_self_test="true">
+        <Model id="12013" name="VOX AC30 | Celestion Pre-Rola Greenback Pulsonic drivers" blob="cab_sim" tm="Based on VOX® AC30® with Celestion® Pre-Rola Greenback Pulsonic drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_212 UK C30 GB 69_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2231,7 +2231,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12015" name="Zilla Custom with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Zilla® Custom with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12015" name="Zilla Custom | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Zilla® Custom with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Zila Cust V30 12 V2_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2271,7 +2271,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12017" name="Fender Deluxe “Blackface” with Jensen C12K drivers" blob="cab_sim" tm="Based on Fender® Deluxe® “Blackface” with Jensen® C12K drivers" style="" skip_self_test="true">
+        <Model id="12017" name="Fender Deluxe “Blackface” | Jensen C12K drivers" blob="cab_sim" tm="Based on Fender® Deluxe® “Blackface” with Jensen® C12K drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_112 Fend Dlx Black C12K 00s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2291,7 +2291,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12018" name="Fender Deluxe “Tweed” with WGS G12Q drivers" blob="cab_sim" tm="Based on Fender® Deluxe® “Tweed” with WGS® G12Q drivers" style="" skip_self_test="true">
+        <Model id="12018" name="Fender Deluxe “Tweed” | WGS G12Q drivers" blob="cab_sim" tm="Based on Fender® Deluxe® “Tweed” with WGS® G12Q drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_112 Fend Dlx Tweed WGS-Q 10s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2311,7 +2311,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12019" name="Zilla Mini Modern with Celestion G12H150 Redback drivers" blob="cab_sim" tm="Based on Zilla® Mini Modern with Celestion® G12H150 Redback drivers" style="" skip_self_test="true">
+        <Model id="12019" name="Zilla Mini Modern | Celestion G12H150 Redback drivers" blob="cab_sim" tm="Based on Zilla® Mini Modern with Celestion® G12H150 Redback drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_112 Zila MiniMod RB 17_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2331,7 +2331,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12020" name="Fender Tremolux with Oxford Alnico drivers" blob="cab_sim" tm="Based on Fender® Tremolux® with Oxford® Alnico drivers" style="" skip_self_test="true">
+        <Model id="12020" name="Fender Tremolux | Oxford Alnico drivers" blob="cab_sim" tm="Based on Fender® Tremolux® with Oxford® Alnico drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_210 Fend Tremolux Oxf 63_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2351,7 +2351,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12021" name="Mesa Rectifier with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Rectifier® with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12021" name="Mesa Rectifier | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Rectifier® with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_212 Cali Recto V30 98_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2371,7 +2371,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12022" name="Fender Twin Reverb with Jensen C12Q drivers" blob="cab_sim" tm="Based on Fender® Twin Reverb® with Jensen® C12Q drivers" style="" skip_self_test="true">
+        <Model id="12022" name="Fender Twin Reverb | Jensen C12Q drivers" blob="cab_sim" tm="Based on Fender® Twin Reverb® with Jensen® C12Q drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_212 Fend TwinRev C12Q 00s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2411,7 +2411,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12024" name="VOX AC30 Top Boost with Celestion Alnico “Silver Bell” drivers" blob="cab_sim" tm="Based on VOX® AC30® Top Boost with Celestion® Alnico “Silver Bell” drivers" style="" skip_self_test="true">
+        <Model id="12024" name="VOX AC30 Top Boost | Celestion Alnico “Silver Bell” drivers" blob="cab_sim" tm="Based on VOX® AC30® Top Boost with Celestion® Alnico “Silver Bell” drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_212 UK C30 65_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2431,7 +2431,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12025" name="Zilla Open with Celestion Alnico Gold drivers" blob="cab_sim" tm="Based on Zilla® Open with Celestion® Alnico Gold drivers" style="" skip_self_test="true">
+        <Model id="12025" name="Zilla Open | Celestion Alnico Gold drivers" blob="cab_sim" tm="Based on Zilla® Open with Celestion® Alnico Gold drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_212 Zila Open Gold 19_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2451,7 +2451,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12026" name="Fender Princeton with FatJimmy C1060 Drivers" blob="cab_sim" tm="Based on Fender® Princeton® with FatJimmy® C1060 Drivers" style="" skip_self_test="true">
+        <Model id="12026" name="Fender Princeton | FatJimmy C1060 Drivers" blob="cab_sim" tm="Based on Fender® Princeton® with FatJimmy® C1060 Drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_110 Fend Prince Brown FatJ 10s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2471,7 +2471,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12028" name="Marshall 1960A with Celestion G12M25 drivers" blob="cab_sim" tm="Based on Marshall® 1960A® with Celestion® G12M25 drivers" style="" skip_self_test="true">
+        <Model id="12028" name="Marshall 1960A | Celestion G12M25 drivers" blob="cab_sim" tm="Based on Marshall® 1960A® with Celestion® G12M25 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Brit 60A GB75Hz 89_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2491,7 +2491,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12029" name="Marshall 1960B with Celestion Marshall Vintage 30 drivers" blob="cab_sim" tm="Based on Marshall® 1960B® with Celestion® Marshall® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12029" name="Marshall 1960B | Celestion Marshall Vintage 30 drivers" blob="cab_sim" tm="Based on Marshall® 1960B® with Celestion® Marshall® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Brit 60B V30 95_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2511,7 +2511,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12030" name="Marshall 1960TV with Celestion G12M25 drivers" blob="cab_sim" tm="Based on Marshall® 1960TV® with Celestion® G12M25 drivers" style="" skip_self_test="true">
+        <Model id="12030" name="Marshall 1960TV | Celestion G12M25 drivers" blob="cab_sim" tm="Based on Marshall® 1960TV® with Celestion® G12M25 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Brit TV GB75Hz 69_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2531,7 +2531,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12031" name="Mesa Standard OS Angled with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Standard OS Angled with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12031" name="Mesa Standard OS Angled | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Standard OS Angled with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Cali Stand OS A V30 01_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2551,7 +2551,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12032" name="Mesa Traditional Angled with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Traditional Angled with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12032" name="Mesa Traditional Angled | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Mesa® Traditional Angled with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Cali Trad A V30 92_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2571,7 +2571,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12033" name="Mesa Traditional Straight with Celestion G12H30 drivers" blob="cab_sim" tm="Based on Mesa® Traditional Straight with Celestion® G12H30 drivers" style="" skip_self_test="true">
+        <Model id="12033" name="Mesa Traditional Straight | Celestion G12H30 drivers" blob="cab_sim" tm="Based on Mesa® Traditional Straight with Celestion® G12H30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Cali Trad S H30 15_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2591,7 +2591,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12034" name="Orange PPC412 with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Orange® PPC412 with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12034" name="Orange PPC412 | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Orange® PPC412 with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Range PPC V30 02_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2611,7 +2611,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12035" name="Bogner Ubercab with Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Bogner® Ubercab® with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
+        <Model id="12035" name="Bogner Ubercab | Celestion Vintage 30 drivers" blob="cab_sim" tm="Based on Bogner® Ubercab® with Celestion® Vintage 30 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_412 Banger Uber V30 00s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2631,7 +2631,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12036" name="Mesa Oversize Angle 2003 with Celestion UK Vintage 30" blob="cab_sim" tm="Based on Mesa® Oversize Angle 2003 with Celestion® UK Vintage 30" style="" skip_self_test="true">
+        <Model id="12036" name="Mesa Oversize Angle 2003 | Celestion UK Vintage 30" blob="cab_sim" tm="Based on Mesa® Oversize Angle 2003 with Celestion® UK Vintage 30" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 CA Stand OS A V30 03_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_EQ_DB" max="MAX_EQ_DB" defaultValue="0.0" units="dB" />
@@ -2711,7 +2711,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12040" name="Zilla Fatboy 2x12 2002 with Celestion UK Vintage 30" blob="cab_sim" tm="Based on Zilla® Fatboy 2x12 2002 with Celestion® UK Vintage 30" style="" skip_self_test="true">
+        <Model id="12040" name="Zilla Fatboy 2x12 2002 | Celestion UK Vintage 30" blob="cab_sim" tm="Based on Zilla® Fatboy 2x12 2002 with Celestion® UK Vintage 30" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_212 Zila Fatboy V30 02_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_EQ_DB" max="MAX_EQ_DB" defaultValue="0.0" units="dB" />
@@ -2771,7 +2771,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-         <Model id="12043" name="VOX AC15 with Celestion Alnico Blue drivers" blob="cab_sim" tm="Based on VOX® AC15® with Celestion® Alnico Blue drivers" style="" skip_self_test="true">
+         <Model id="12043" name="VOX AC15 | Celestion Alnico Blue drivers" blob="cab_sim" tm="Based on VOX® AC15® with Celestion® Alnico Blue drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ME_112 UK C15 Blue_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2791,7 +2791,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12044" name="Fender Bassman Tweed with Jensen P10R drivers" blob="cab_sim" tm="Based on Fender® Bassman® Tweed with Jensen® P10R drivers" style="" skip_self_test="true">
+        <Model id="12044" name="Fender Bassman Tweed | Jensen P10R drivers" blob="cab_sim" tm="Based on Fender® Bassman® Tweed with Jensen® P10R drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ME_410 US Bassnam PR10_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2811,7 +2811,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="12045" name="Fender Princeton with Jensen C10R Drivers" blob="cab_sim" tm="Based on Fender® Princeton® with Jensen® C10R Drivers" style="" skip_self_test="true">
+        <Model id="12045" name="Fender Princeton | Jensen C10R Drivers" blob="cab_sim" tm="Based on Fender® Princeton® with Jensen® C10R Drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ME_110 US PRN C10R_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2835,7 +2835,7 @@
 
         <Category id="21" name="Cabsim Bass">
 
-        <Model id="21001" name="Darkglass D210C with custom Eminence ceramic drivers" blob="cab_sim" tm="Based on Darkglass® D210C® with custom Eminence® ceramic drivers" style="" skip_self_test="true">
+        <Model id="21001" name="Darkglass D210C | custom Eminence ceramic drivers" blob="cab_sim" tm="Based on Darkglass® D210C® with custom Eminence® ceramic drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="ML_210 DG C_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2855,7 +2855,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="21002" name="Fender Bassman with Jensen P10Q drivers" blob="cab_sim" tm="Based on Fender® Bassman® with Jensen® P10Q drivers" style="" skip_self_test="true">
+        <Model id="21002" name="Fender Bassman | Jensen P10Q drivers" blob="cab_sim" tm="Based on Fender® Bassman® with Jensen® P10Q drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_410 Fend Bassman P10Q 16_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2875,7 +2875,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="21003" name="Ampeg SVT 810 with custom Eminence ceramic drivers" blob="cab_sim" tm="Based on Ampeg® SVT® 810® with custom Eminence® ceramic drivers" style="" skip_self_test="true">
+        <Model id="21003" name="Ampeg SVT 810 | custom Eminence ceramic drivers" blob="cab_sim" tm="Based on Ampeg® SVT® 810® with custom Eminence® ceramic drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_810 Amped SVT Aln 70s_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2915,7 +2915,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="21005" name="Darkglass DG212N with custom Eminence neodymium drivers" blob="cab_sim" tm="Based on Darkglass® DG212N® with custom Eminence® neodymium drivers" style="" skip_self_test="true">
+        <Model id="21005" name="Darkglass DG212N | custom Eminence neodymium drivers" blob="cab_sim" tm="Based on Darkglass® DG212N® with custom Eminence® neodymium drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_212 DG Neo_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />
@@ -2935,7 +2935,7 @@
          <Parameter name="GRID MODE" type="switch" min="0" max="1" defaultValue="1" steps="2" units="" />
         </Model>
 
-        <Model id="21006" name="Marshall 1935A with Celestion G12M25 drivers" blob="cab_sim" tm="Based on Marshall® 1935A® with Celestion® G12M25 drivers" style="" skip_self_test="true">
+        <Model id="21006" name="Marshall 1935A | Celestion G12M25 drivers" blob="cab_sim" tm="Based on Marshall® 1935A® with Celestion® G12M25 drivers" style="" skip_self_test="true">
          <Parameter name="bypass" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="ir selector" type="string" min="0" max="999" defaultValue="NG_412 Brit 35A GB55Hz 75_Dynamic 57" steps="1000" units="" />
          <Parameter name="LEVEL" type="float" min="MIN_CABSIM_DB" max="MAX_CABSIM_DB" skew="4.93" min_string="OFF" defaultValue="0.0" units="dB" />

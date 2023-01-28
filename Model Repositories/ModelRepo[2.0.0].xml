@@ -208,7 +208,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1017" name="EVH 5150 III 100S | EL34 tubes" blob="evh_red_legacy" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
+        <Model id="1017" name="EVH 5150 III 100S Red EL34" blob="evh_red_legacy" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -489,7 +489,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1098" name="EVH 5150 III 100S | EL34 tubes" blob="evh_blue_legacy" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
+        <Model id="1098" name="EVH 5150 III 100S Blue EL34" blob="evh_blue_legacy" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -520,7 +520,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1101" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1101" name="Mesa Boogie Lone Star Clean 50W Normal" blob="mesa_lonestar_clean50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -531,7 +531,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1102" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1102" name="Mesa Boogie Lone Star Clean 50W Tweed" blob="mesa_lonestar_clean50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -542,7 +542,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1103" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1103" name="Mesa Boogie Lone Star Clean 100W Normal" blob="mesa_lonestar_clean100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -553,7 +553,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1104" name="Mesa Boogie Lone Star - Clean 2 Channel" blob="mesa_lonestar_clean100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
+        <Model id="1104" name="Mesa Boogie Lone Star Clean 100W Tweed" blob="mesa_lonestar_clean100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Clean 2 Channel" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -564,7 +564,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1105" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1105" name="Mesa Boogie Lone Star Drive 50W Normal" blob="mesa_lonestar_drive50wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -576,7 +576,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1106" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1106" name="Mesa Boogie Lone Star Drive 50W Tweed" blob="mesa_lonestar_drive50wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -588,7 +588,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1107" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1107" name="Mesa Boogie Lone Star Drive 100W Normal" blob="mesa_lonestar_drive100wnormal" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -600,7 +600,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1108" name="Mesa Boogie Lone Star - Channel 2 Drive" blob="mesa_lonestar_drive100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
+        <Model id="1108" name="Mesa Boogie Lone Star Drive 100W Tweed" blob="mesa_lonestar_drive100wtweed" tm="Based on Mesa® Boogie® Lone Star® - Channel 2 Drive" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -713,7 +713,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="2.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1118" name="EVH 5150 6L6 Tubes" blob="evh_evh5150iii6l6_blue" tm="Based on EVH® 5150® 6L6 Tubes" style="">
+        <Model id="1118" name="EVH 5150 Blue 6L6" blob="evh_evh5150iii6l6_blue" tm="Based on EVH® 5150® 6L6 Tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -724,7 +724,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="1119" name="EVH 5150 6L6 Tubes" blob="evh_evh5150iii6l6_red" tm="Based on EVH® 5150® 6L6 Tubes" style="">
+        <Model id="1119" name="EVH 5150 Red 6L6" blob="evh_evh5150iii6l6_red" tm="Based on EVH® 5150® 6L6 Tubes" style="">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -1049,7 +1049,7 @@
       </Model>
 
       
-      <Model id="1148" name="EVH 5150 III 100S | EL34 tubes" blob="evh_red" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="" replaces="1017">
+      <Model id="1148" name="EVH 5150 III 100S Red EL34" blob="evh_red" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="" replaces="1017">
          <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -1060,7 +1060,7 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
       </Model>
 
-      <Model id="1149" name="EVH 5150 III 100S | EL34 tubes" blob="evh_blue" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="" replaces="1098">
+      <Model id="1149" name="EVH 5150 III 100S Blue EL34" blob="evh_blue" tm="Based on EVH® 5150 III® 100S® with EL34 tubes" style="" replaces="1098">
         <Parameter name="GAIN" type="float" min="0" max="10" defaultValue="5" units="" />
         <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
         <Parameter name="MID" type="float" min="0" max="10" defaultValue="5" units="" />
@@ -1247,7 +1247,7 @@
 
     <Category id="3" name="Bass Overdrive">
 
-        <Model id="3000" name="Darkglass Microtubes B3K" blob="b3k" tm="Based on Darkglass® Microtubes B3K®" style="">
+        <Model id="3000" name="Darkglass Micro B3K" blob="b3k" tm="Based on Darkglass® Microtubes B3K®" style="">
          <Parameter name="DRIVE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="GROWL" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
          <Parameter name="MIDBOOST" type="switch" min="0" max="1" defaultValue="0" steps="2" units="" />
@@ -1271,7 +1271,7 @@
          <Parameter name="VOLUME" type="float" min="0" max="10" defaultValue="5" units="" />
         </Model>
 
-        <Model id="3006" name="Darkglass Vintage Microtubes" blob="vmt" tm="Based on Darkglass® Vintage Microtubes®" style="">
+        <Model id="3006" name="Darkglass Vintage Micro" blob="vmt" tm="Based on Darkglass® Vintage Microtubes®" style="">
          <Parameter name="DRIVE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="ERA" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="LEVEL" type="float" min="0" max="10" defaultValue="5" units="" />
