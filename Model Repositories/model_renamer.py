@@ -1,6 +1,7 @@
 # This script will take the ModelRepo.xml file and rename the models based on the trademark
 
 import argparse
+import json
 import xml.etree.ElementTree as ET
 
 parser = argparse.ArgumentParser(description='Rename the models in an XML file')
@@ -11,9 +12,20 @@ args = parser.parse_args()
 tree = ET.parse(args.original)
 root = tree.getroot()
 
+def load_override_json(path):
+    with open(path) as f:
+        data = json.load(f)
+    return data
+
 def get_actual_model(model):
     name = model.get('name')
     trademark = model.get('tm')
+    model_id = model.get('id')
+
+    # Check if the model has a manual override
+    if model_id in override.keys():
+        print('Overriding model: ' + name + ' with ' + override[model_id])
+        return override[model_id]
 
     # Remove "Based on " from the name
     new_name = trademark.replace('Based on ', '')
@@ -23,6 +35,9 @@ def get_actual_model(model):
     new_name = new_name.replace('loaded with', '|')
     # remove the word "with" from "loaded with"
     new_name = new_name.replace('with', '|')
+    # remove the word "tubes" from the name
+    new_name = new_name.replace('tubes', '')
+    new_name = new_name.replace('Tubes', '')
 
     # Check if the name contains a Mono or Stereo suffix
     if name.endswith('(M)'):
@@ -34,6 +49,9 @@ def get_actual_model(model):
 
 
 print('Renaming models in file: ' + args.original)
+override = load_override_json('manual_override.json')["ids"]
+print(override)
+
 # Itterate over the categories inside the XML file
 for category in root.findall('Category'):
     # Itterate over the models inside the category
