@@ -1,1 +1,5 @@
-mount/*
+# ignore everything in the mount folder except the filesystems folder
+# and the mount folder itself
+
+/mount/*
+!/mount

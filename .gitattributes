@@ -1,0 +1,2 @@
+QC-dev-environment/filesystems/2.0.0-vanilla.bin.gz filter=lfs diff=lfs merge=lfs -text
+QC-dev-environment/qt-compiled-4.8.7.tar.gz filter=lfs diff=lfs merge=lfs -text
