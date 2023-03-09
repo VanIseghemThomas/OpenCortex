@@ -60,6 +60,11 @@ To link QT to the right fonts folder, run:
 export QT_QWS_FONTDIR=/etc/fonts
 ```
 
+## Creating an update package
+
+You can create a custom update package based on the mounted filesystem, by running the `update-builder.sh` script. This can be found in the root of the docker container. This way you can patch your update to include all mods and ssh access, without opening the QC up everytime.
+
+The update file should be available on your host machine at `filesystems/update-opencortex.bin.gz`. You can validate the update file by mounting it as the actual update file using the `UPDATE_FILE` environment variable and running `init_system.sh`.
 
 
 ## Config for custom compiled QT

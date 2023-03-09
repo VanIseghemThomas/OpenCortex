@@ -11,15 +11,28 @@ echo "Mounting rootfs.ext3"
 mount -t ext4 /qc-fs-uncompressed/rootfs.ext3 $QEMU_LD_PREFIX
 echo "Mounting rootfs.ext3 finished"
 
-echo "Installing QT"
-cd /qt_src && ./install_qt_compiled.sh
-echo "Installing QT finished"
+# Promt the user to install custom QT
+# if the user types "y" or "Y" then install custom QT
+echo "Do you want to install the custom compiled QT? (y/n)"
+echo ""
+read -n 1 -r
+echo ""
+
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Installing QT"
+    cd /qt_src && ./install_qt_compiled.sh
+    echo "Installing QT finished"
+fi
 
 # Prompt user to chroot into the $QEMU_LD_PREFIX directory
 # if the user types "y" or "Y" then chroot into the $QEMU_LD_PREFIX directory
 # otherwise exit the script
 echo "Do you want to chroot into the created QC-filesystem? (y/n)"
+echo ""
 read -n 1 -r
+echo ""
+
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     echo ""

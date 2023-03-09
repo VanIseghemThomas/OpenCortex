@@ -39,5 +39,6 @@ COPY install_qt_compiled.sh .
 
 WORKDIR /
 COPY init_system.sh .
+COPY update-builder.sh .
 
 ENTRYPOINT ["/bin/bash"]
