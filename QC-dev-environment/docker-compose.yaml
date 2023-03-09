@@ -15,7 +15,7 @@ services:
 
     environment:
       # Edit this to your needs. This should be just the file name, not the path.
-      - UPDATE_FILE=update-opencortex.bin.gz
+      - UPDATE_FILE=verify.bin.gz
 
     privileged: true
     entrypoint: /bin/bash -c "while true; do sleep 1; done"
