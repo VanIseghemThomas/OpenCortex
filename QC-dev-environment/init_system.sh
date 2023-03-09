@@ -1,6 +1,14 @@
 #!/bin/bash
+
+# Decompress archive and mount rootfs.ext3
+gunzip -d -k /qc-fs/$UPDATE_FILE
+# Run tar command on the decompressed file to extract the rootfs.ext3 file
+# We need to remove the .gz extension from the file name
+tar -xvf /qc-fs/${UPDATE_FILE::-3} -C /qc-fs-uncompressed
+rm /qc-fs/${UPDATE_FILE::-3}
+
 echo "Mounting rootfs.ext3"
-mount -t ext4 /qc-fs/rootfs.ext3 $QEMU_LD_PREFIX
+mount -t ext4 /qc-fs-uncompressed/rootfs.ext3 $QEMU_LD_PREFIX
 echo "Mounting rootfs.ext3 finished"
 
 echo "Installing QT"
@@ -14,6 +22,7 @@ echo "Do you want to chroot into the created QC-filesystem? (y/n)"
 read -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+    echo ""
     echo "Chrooting into $QEMU_LD_PREFIX"
     chroot $QEMU_LD_PREFIX
 fi

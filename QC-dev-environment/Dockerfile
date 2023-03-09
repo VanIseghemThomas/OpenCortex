@@ -29,12 +29,7 @@ ENV QEMU_LD_PREFIX="/opt/analog/cces-linux-add-in/1.3.1/ARM/arm-linux-gnueabi/sy
 
 # Mounting the QC-rootfs
 RUN mkdir /qc-fs
-WORKDIR /qc-fs
-COPY ./filesystems/2.0.0-vanilla.bin.gz .
-# Use gunzip to decompress the QC-rootfs
-RUN gunzip -d 2.0.0-vanilla.bin.gz
-# The extracted QC-rootfs is a tar file
-RUN tar -xvf 2.0.0-vanilla.bin
+RUN mkdir /qc-fs-uncompressed
 
 RUN mkdir -p /qt_src
 WORKDIR /qt_src

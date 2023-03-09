@@ -2,4 +2,6 @@
 # and the mount folder itself
 
 /mount/*
+/filesystems/*
 !/mount
+!/filesystems/README.md
