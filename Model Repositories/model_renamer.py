@@ -5,7 +5,7 @@ import json
 import xml.etree.ElementTree as ET
 
 parser = argparse.ArgumentParser(description='Rename the models in an XML file')
-parser.add_argument('--original', metavar='xml_file', type=str, help='The XML file to be parsed')
+parser.add_argument('--original', metavar='xml_file', type=str, help='The XML file to be parsed', required=True)
 parser.add_argument('--out', metavar='output_file', type=str, default='ModelRepo_generated.xml', help='The output file', const='ModelRepo_generated.xml', nargs='?')
 args = parser.parse_args()
 
