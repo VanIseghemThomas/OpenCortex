@@ -12,8 +12,6 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 **Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority**
 
-*If you can still read this note, I wasn't contacted yet.*
-
 # Table of contents
 
 - [Summary](https://github.com/VanIseghemThomas/OpenCortex#summary)
