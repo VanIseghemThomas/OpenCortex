@@ -1,0 +1,21 @@
+# Docker compose file for easy volume mounting and running of the container
+
+services:
+  cortex-dev:
+    image: cortex-dev:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - cortex-dev:latest
+
+    volumes:
+      - ./filesystems:/qc-fs
+      - ./mount:/mnt
+
+    environment:
+      # Edit this to your needs. This should be just the file name, not the path.
+      - UPDATE_FILE=2.0.1.bin.gz
+
+    privileged: true
+    entrypoint: /bin/bash -c "while true; do sleep 1; done"

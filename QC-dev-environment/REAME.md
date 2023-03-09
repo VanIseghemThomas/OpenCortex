@@ -20,7 +20,9 @@ Once you've got the update file, you can put it inside the `filesystems` directo
 
 ### Running the container
 
-It needs to run privileged since we need to run the `mount` command inside it. You can run it without the `--privileged` path if you're not planning to mount the QC's file system and just want to compile something
+It needs to run privileged since we need to run the `mount` command inside it. You can run it without the `--privileged` path if you're not planning to mount the QC's file system and just want to compile something.
+
+The `mount` folder is optional. But it's an easy way to get files from to host inside the container and vice versa.
 
 ```
 docker run --privileged -it -p 5900:5900 \
@@ -28,6 +30,20 @@ docker run --privileged -it -p 5900:5900 \
     -v <absolute-path-to-current-folder>/filesystems:/qc-fs \
     -e UPDATE_FILE=<update-file-name> \
     cortex-dev
+```
+
+Another way is to use `docker compose`. In the `docker-compose.yaml` file, all volumes are already defined. This means you only have to define the update file in the `environment` section.
+
+To use this first run the service in detached mode
+
+```
+docker compose up -d
+```
+
+After that you can attach to the container using
+
+```
+docker compose exec cortex-dev /bin/bash
 ```
 
 When attached to the docker container's shell, there is one post-install step left. Run the following command:
