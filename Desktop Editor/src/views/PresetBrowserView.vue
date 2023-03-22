@@ -22,6 +22,7 @@ import axios from 'axios';
 import xmljs from 'xml-js';
 import protobuf from 'protobufjs';
 import store from '@/store';
+import BinaryPreset from '../models/Presets/Preset_pb';
 
 export default defineComponent({
     name: 'PresetBrowserView',
@@ -94,12 +95,12 @@ export default defineComponent({
             return file;
         },
 
-        async OpenPreset(preset: Object, setlist: Array<any>){
+        async OpenPreset(preset: Object){
             const presetPath = (preset as any)._attributes.path;
-            const presetLocation = this.GetPresetLocation(preset, setlist);
+            // const presetLocation = this.GetPresetLocation(preset, setlist);
             // Go to the preset viewer and pass the presets as a prop
             // const decodedPreset = await this.DecodePreset(presetPath, presetLocation);
-            this.DecodePreset("Vienna.pb", presetLocation).then((decodedPreset) => {
+            this.DecodePreset("Vienna.pb").then((decodedPreset) => {
                 console.log("decoded", decodedPreset)
                 console.log("preset path: ", presetPath)
                 store.dispatch('setSelectedPreset', decodedPreset);
@@ -111,28 +112,21 @@ export default defineComponent({
 
         },
 
-        async DecodePreset(presetPath: string, presetLocation: any): Promise<any>{
+        async DecodePreset(presetPath: string): Promise<BinaryPreset.BinaryPreset.AsObject>{
             return new Promise((resolve, reject) => {
-                protobuf.load('protos/Preset.proto', async (err, root) => {
+                protobuf.load('protos/Preset.proto', async (err) => {
                 if (err) return reject(err);
 
-                // Obtain a message type
-                const Preset = root?.lookupType("BinaryPreset");
-                
                 // Get the .pb file Antartica.pb from the public folder and decode it
                 // Do this without using the fs module
                 const response = await fetch(presetPath);
                 const arrayBuffer = await response.arrayBuffer();
 
                 // Decode an Uint8Array (browser) or Buffer (node) to a message
-                const message = Preset?.decode(new Uint8Array(arrayBuffer));
+                const preset: BinaryPreset.BinaryPreset = BinaryPreset.BinaryPreset.deserializeBinary(new Uint8Array(arrayBuffer));
+                const object: BinaryPreset.BinaryPreset.AsObject = preset.toObject();
 
-                let presetObject = message as any;
-
-                presetObject.name = this.PathToFile(presetPath as any, true);
-                presetObject.location = presetLocation;
-
-                resolve(presetObject);
+                resolve(object);
                 });
             });
         },
