@@ -49,9 +49,9 @@ int main(int argc, char **argv)
          *inputFileName = argv[2];
 
     unsigned long serialSize = strlen(serialNumber);
-    if (serialSize != 9)
+    if (serialSize != 9 && serialSize != 0)
     {
-        printf("the serial number must be 9 characters long.\n");
+        printf("the serial number must be empty or 9 characters long.\n");
         return 1;
     }
 
