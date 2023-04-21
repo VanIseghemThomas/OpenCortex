@@ -1,9 +1,21 @@
 NeuralDSP QuadCortex file decryptor.
 
-Compile with `make` (requires gcc and openssl-dev installed), then pass the serial number found in `/etc/qc_sn` as command line argument:
+Build the image:
 
 ```sh
-./qc_decrypt QA00XXXXX /path/to/encrypted.json/cns/ldr/... > decrypted.dat
+docker build . -t qc_decrypt
+```
+
+To decrypt user files (pass the serial number found in `/etc/qc_sn` as command line argument):
+
+```sh
+docker run -v/path/to/your/files/:/data qc_decrypt QA00XXXXX /data/encrypted.json
+```
+
+To decrypt update files instead, provide an empty serial:
+
+```sh
+docker run -v/path/to/your/files/:/data qc_decrypt "" /data/encrypted.json
 ```
 
 ## License
