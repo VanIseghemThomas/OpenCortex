@@ -48,6 +48,16 @@ int main(int argc, char **argv)
     char *serialNumber = argv[1],
          *inputFileName = argv[2];
 
+    printf("Input file name: %s\n", inputFileName);
+
+    // Split into the path and the file name
+    char *path = strrchr(inputFileName, '/');
+    if (path == NULL)
+    {
+        printf("No path found in %s\n", inputFileName);
+        return 1;
+    }
+
     unsigned long serialSize = strlen(serialNumber);
     if (serialSize != 9 && serialSize != 0)
     {
@@ -132,12 +142,36 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    // print it
+    // Print and save the decrypted file
     for (int i = 0; i < outlen; i++)
     {
         printf("%c", plaintext[i]);
     }
     printf("\n");
 
+    // Save the decrypted file to disk
+    // It should be saved to the same directory as the encrypted file with the extension .dec
+    char *outputFileName = (char *)malloc(strlen(inputFileName) + 5);
+    strcpy(outputFileName, inputFileName);
+    strcat(outputFileName, ".dec");
+
+    fp = fopen(outputFileName, "wb");
+    if (!fp)
+    {
+        printf("can't open %s\n", outputFileName);
+        return 1;
+    }
+
+    fwrite(plaintext, 1, outlen, fp);
+
+    fclose(fp);
+
+    free(key_material);
+    free(input);
+    free(plaintext);
+    free(outputFileName);
+
+    EVP_CIPHER_CTX_free(ctx);
+    
     return 0;
 }
