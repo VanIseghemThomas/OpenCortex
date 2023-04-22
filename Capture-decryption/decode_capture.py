@@ -1,5 +1,4 @@
 import sys
-import json
 import google.protobuf.json_format as json_format
 import Capture_pb2
 
