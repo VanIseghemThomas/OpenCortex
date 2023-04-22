@@ -1,4 +1,6 @@
-NeuralDSP QuadCortex file decryptor.
+## NeuralDSP QuadCortex Neural Capture file decryptor.
+
+This tool can be used to take one of the encrypted `.cns` or `.json` files, and decrypt them to a usable format. The `.cns` files are actually protobufs and can be decoded with the Python decoder.
 
 Build the image:
 
@@ -21,3 +23,20 @@ docker run -v/path/to/your/files/:/data qc_decrypt "" /data/encrypted.json
 ## License
 
 This tool was made with ♥  by [Simone Margaritelli](https://www.evilsocket.net/) and it is released under the GPL 3 license.
+
+## Unencrypted Neural Capture file decoder
+
+This tool allows you to decode the files, decrypted using the tool above.
+
+## Dependencies
+You need to use the protobuf 3.20 package for this to work. You can get it by running:
+
+```
+pip install protobuf==3.20.*
+```
+
+## Usage
+
+```
+python decode_capture.py <your-file>.cns.dec > <output-name>.json
+```
