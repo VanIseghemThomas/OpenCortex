@@ -35,16 +35,19 @@
         <div class="file-upload">
             <h3 class="file-upload-title">Encrypted file:</h3>
             
-            <label class="file-input-label" id="file-input-label" for="file-input">
+            <label class="file-input-label upload-disabled" id="file-input-label" for="file-input">
                 <i class="fa-solid fa-cloud-arrow-up pr-5"></i> 
                 <p>Choose File</p> 
             </label>
-            <input class="file-input" id="file-input" type="file">
+            <input class="file-input" id="file-input" type="file" disabled>
         </div>
     </div>
 
-    <footer>
-        Any misuse of this tool is at your own risk. We do no condone any illegal use of this tool as it is intended for educational purposes only.
+    <footer class="ethics-message">
+        <p>
+            We do not condone any misuse or illegal use of this tool as it is intended for educational purposes only. Everything is computed locally using JS and no data is being stored or sent to any server at any time.
+        </p>
+        <button class="ethics-message-ack">I understand</button>
     </footer>
 </body>
 

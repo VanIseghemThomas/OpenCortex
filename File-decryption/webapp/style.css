@@ -19,6 +19,13 @@ header {
     background-color: rgb(10,10,10);
 }
 
+/* media query for mobile devices */
+@media screen and (max-width: 712px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+}
+
 footer {
     padding: 1rem;
     position: absolute;
@@ -128,3 +135,44 @@ header .header-title{
 .file-upload .file-input-label .fa-cloud-arrow-up{
     margin-right: 0.5rem;
 }
+
+.upload-disabled{
+    background-color: rgb(63, 13, 242, 0.5) !important;
+    cursor: not-allowed !important;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 712px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+footer p {
+    margin-right: 1rem;
+    width: 100%
+}
+
+footer button {
+    padding: .75rem 0.5rem;
+    border-radius: 20px;
+    border: 3px solid rgb(53, 107, 62, 0);
+    outline-style: none;
+    
+    background-color: rgb(63, 13, 242);
+    color: white;
+    font-size: rem;
+    margin: 0.5rem;
+    text-align: center;
+    min-width: 6rem;
+}
+
+footer button:hover{
+    background-color: rgb(98, 13, 255);
+    cursor: pointer;
+}	
+

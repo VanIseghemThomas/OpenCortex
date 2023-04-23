@@ -93,8 +93,19 @@ function processFileInput(e) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    let acknowledgement = document.querySelector('.ethics-message-ack');
+    let fileInput = document.getElementById('file-input');
+    let fileInputLabel = document.querySelector('.file-input-label');
+    
+    // Etics message
+    acknowledgement.addEventListener('click', function () {
+        document.querySelector('.ethics-message').style.display = 'none';
+        // Enable the file input
+        fileInput.disabled = false;
+        fileInputLabel.classList.remove('upload-disabled');
+    });
+
     // handle file uploads
-    let fileInput = document.getElementById('file-input')
     fileInput.onchange = () => {
         const reader = new FileReader()
         reader.onload = processFileInput;
