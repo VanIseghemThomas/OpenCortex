@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +18,13 @@ body {
     line-height: 1.5;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    margin: 2rem 0;
+    width: 100%;
+}
+
 header {
     padding: 1rem;
     display: flex;
@@ -20,6 +33,27 @@ header {
 }
 
 input{
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 3px solid rgb(53, 107, 62, 0);
+    outline-style: none;
+    
+    background-color: rgb(18, 18, 18);
+    color: rgb(185, 185, 185);
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+button {
+    font-family: 'IBM Plex sans', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+select {
     padding: 0.5rem;
     border-radius: 20px;
     border: 3px solid rgb(53, 107, 62, 0);
@@ -46,41 +80,134 @@ header .header-title{
 }
 
 .content {
-    max-width: 800px;
+    width: 100%;
+    height: calc(100vh - 96px);
+    overflow-y: scroll;
+    overflow-x: hidden;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
+}
 
+.content-container {
     /* Vertical align in page */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    /* Center in page */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.serial-input{
-    margin-bottom: 3rem;
-}
-
-.serial-input p{
-    color: rgb(185, 185, 185);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .serial-input p {
+    color: rgb(185, 185, 185);
     margin-bottom: 1rem;
 }
 
-.file-upload {
+.enable-decryption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+label.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 1rem;
+}
+
+label.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.file-btns {
     width: 100%;
 }
 
-.file-upload .file-input-title {
+.btn-cta {
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 13, 242);
+    height: 3rem;
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+}
+
+.btn-cta:hover {
+    background-color: rgb(98, 13, 255);
+    cursor: pointer;
+}
+
+.file-btns .file-upload {
+    margin-bottom: 1rem;
+}
+
+.file-btns .file-download {
+    background-color: #45f862;
+    color: #232323;
+}
+
+.file-btns .file-download:hover {
+    background-color: #37c64f;
+    color: #232323;
+}
+
+.file-btns .file-input-title {
     display: flex;
 
     align-items: center;
@@ -90,29 +217,127 @@ header .header-title{
     width: 100%;
 }
 
-.file-upload .file-input {
+.file-btns-input {
+    display: none !important;
+}
+
+.btn-cta.file-download .fa-solid {
+    margin-right: 0.5rem;
+}
+
+.file-btns .file-upload-input {
     display: none;
 }
 
-.file-upload .file-upload-title{
+.file-btns .section-title{
     margin-bottom: 1rem;
 }
 
-.file-upload .file-input-label {
-    display: flex;
-    border-radius: 1rem;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(63, 13, 242);
-    height: 3rem;
-    width: 100%;
-}
-
-.file-upload .file-input-label:hover{
+.file-btns .file-input-label:hover{
     background-color: rgb(98, 13, 255);
     cursor: pointer;
 }
 
-.file-upload .file-input-label .fa-cloud-arrow-up{
+.file-btns .file-input-label .fa-solid{
     margin-right: 0.5rem;
+}
+
+.file-decode {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.file-decode .section-title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.file-decode #protobuf-list {
+    margin-bottom: 2rem;
+}
+
+.file-decode #decrypt-output {
+    width: 100%;
+    min-height: 20rem;
+}
+
+/* Based on JSON viewer by: https://codepen.io/WartClaes/pen/QGGPJL */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+.json {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  background-color: rgb(50, 50, 50);
+  text-align: start;
+  padding: 1rem 2rem 1.5rem 2rem;
+  border-radius: 10px;
+}
+.json > .json__item {
+  display: block;
+}
+
+.json__item {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.json__item--collapsible {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.json__item--collapsible::before {
+  content: "+";
+  position: absolute;
+  left: 5px;
+}
+.json__item--collapsible::after {
+  background-color: lightgrey;
+  content: "";
+  height: 100%;
+  left: 9px;
+  position: absolute;
+  top: 26px;
+  width: 1px;
+}
+.json__item--collapsible:hover > .json__key, .json__item--collapsible:hover > .json__value {
+  text-decoration: underline;
+}
+
+.json__toggle {
+  display: none;
+}
+.json__toggle:checked ~ .json__item {
+  display: block;
+}
+
+.json__key {
+  color: rgb(123, 123, 227);
+  display: inline;
+}
+.json__key::after {
+  content: ": ";
+}
+
+.json__value {
+  display: inline;
+}
+
+.json__value--string {
+  color: green;
+}
+
+.json__value--number {
+  color: rgb(90, 90, 194);
+}
+
+.json__value--boolean {
+  color: red;
 }

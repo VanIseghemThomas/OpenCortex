@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <script src="assets/js/protobuf.min.js"></script>
     <script src="assets/js/sha1.js"></script>
+    <script src="assets/js/json-viewer.js"></script>
+    <script src="assets/js/file-processing.js"></script>
     <script src="assets/js/main.js"></script>
     
 </head>
@@ -28,28 +30,50 @@
     </header>
     
     <div class="content">
-        <div class="serial-input">
-            <h3>Enter your Quad Cortex serial number</h3>
-            <p>(leave blank for global encrypted file)</p>
-            <input type="text" id="serial-input" />
-        </div>
-        <div class="file-upload">
-            <h3 class="file-upload-title">Encrypted file:</h3>
-            
-            <label class="file-input-label" id="file-input-label" for="file-input">
-                <i class="fa-solid fa-cloud-arrow-up pr-5"></i> 
-                <p>Choose File</p> 
-            </label>
-            <input class="file-input" id="file-input" type="file">
-        </div>
-        <div class="file-decode">
-            <h3 class="file-decode-label">Decoded File:</h3>
-            <select id="protobuf-list">
-                <option value="">None</option>
-            </select>
-            <div>
-                <textarea id="decrypt-output"></textarea>
-            </div>
+        <div class="content-container">
+            <section class="decryption-form">
+                <div class="enable-decryption">
+                    <h2 class="section-title">Decrypt file</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="decrypt-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="serial-input" id="serial-form">
+                    <h3>Enter your Quad Cortex serial number</h3>
+                    <p>(leave blank for global encrypted file)</p>
+                    <input type="text" id="serial-input" />
+                </div>
+            </section>
+
+            <hr/>
+
+            <section class="file-btns">
+                <label class="btn-cta file-input-label file-upload" id="file-input-label" for="file-upload">
+                    <i class="fa-solid fa-cloud-arrow-up pr-5"></i> 
+                    <p>Choose File</p> 
+                </label>
+                <input class="file-upload-input" id="file-upload" type="file">
+
+                <button class="btn-cta file-download" id="file-download">
+                    <i class="fa-solid fa-cloud-arrow-down pr-5"></i> 
+                    <p>Download File</p>
+                </button>
+            </section>
+                
+            <hr/>
+
+            <section class="file-decode">
+                <div class="section-title">
+                    <h3 class="title">Live decoding</h3>
+                </div>
+                <select id="protobuf-list">
+                    <option value="">None</option>
+                </select>
+                <div>
+                    <div id="decrypt-output" class="target"></div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
