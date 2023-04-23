@@ -12,7 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./style.css"/>
+    <script src="/sha1.js"></script>
+    <script src="/main.js"></script>
+    
 </head>
 
 <body>
@@ -22,19 +27,20 @@
     </header>
     
     <div class="content">
-        Enter your Quad Cortex serial number (leave blank for global encrypted file):
-        <br />
-        <br />
-        <input type="text" id="serial-input" />
-        <br />
-        <br />
-        Encrypted file:
-        <br />
-        <br />
-        <input type="file" id="file-input" />
-    
-        <script src="/sha1.js"></script>
-        <script src="/main.js"></script>
+        <div class="serial-input">
+            <h3>Enter your Quad Cortex serial number</h3>
+            <p>(leave blank for global encrypted file)</p>
+            <input type="text" id="serial-input" />
+        </div>
+        <div class="file-upload">
+            <h3 class="file-upload-title">Encrypted file:</h3>
+            
+            <label class="file-input-label" id="file-input-label" for="file-input">
+                <i class="fa-solid fa-cloud-arrow-up pr-5"></i> 
+                <p>Choose File</p> 
+            </label>
+            <input class="file-input" id="file-input" type="file">
+        </div>
     </div>
 </body>
 

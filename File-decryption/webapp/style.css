@@ -63,3 +63,56 @@ header .header-title{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.serial-input{
+    margin-bottom: 3rem;
+}
+
+.serial-input p{
+    color: rgb(185, 185, 185);
+}
+
+.serial-input p {
+    margin-bottom: 1rem;
+}
+
+.file-upload {
+    width: 100%;
+}
+
+.file-upload .file-input-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+    height: 3rem;
+    width: 100%;
+}
+
+.file-upload .file-input {
+    display: none;
+}
+
+.file-upload .file-upload-title{
+    margin-bottom: 1rem;
+}
+
+.file-upload .file-input-label {
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 13, 242);
+    height: 3rem;
+    width: 100%;
+}
+
+.file-upload .file-input-label:hover{
+    background-color: rgb(98, 13, 255);
+    cursor: pointer;
+}
+
+.file-upload .file-input-label .fa-cloud-arrow-up{
+    margin-right: 0.5rem;
+}
