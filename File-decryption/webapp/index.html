@@ -7,24 +7,35 @@
 
     <title>OpenCortex</title>
     <meta name="description" content="OpenCortex decrypt and decode.">
-    <meta name="author" content="Simone Margaritelli">
+    <meta name="authors" content="Simone Margaritelli / Thomas Van Iseghem">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 
 <body>
-    QuadCortex serial, found in /etc/qc_sn. Leave it blank for global decryption.
-    <br />
-    <br />
-    <input type="text" id="serial-input" />
-    <br />
-    <br />
-    Encrypted file:
-    <br />
-    <br />
-    <input type="file" id="file-input" />
-
-    <script src="/sha1.js"></script>
-    <script src="/main.js"></script>
+    <header>
+        <img src="./images/OpenCortex-logo.png" alt="OpenCortex-logo" class="header-logo">
+        <h1 class="header-title">OpenCortex file decryptor</h1>
+    </header>
+    
+    <div class="content">
+        Enter your Quad Cortex serial number (leave blank for global encrypted file):
+        <br />
+        <br />
+        <input type="text" id="serial-input" />
+        <br />
+        <br />
+        Encrypted file:
+        <br />
+        <br />
+        <input type="file" id="file-input" />
+    
+        <script src="/sha1.js"></script>
+        <script src="/main.js"></script>
+    </div>
 </body>
 
 </html>
