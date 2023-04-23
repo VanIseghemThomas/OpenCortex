@@ -38,5 +38,5 @@ pip install protobuf==3.20.*
 ## Usage
 
 ```
-python decode_capture.py <your-file>.cns.dec > <output-name>.json
+python decode_capture.py <your-file>.cns.dec
 ```

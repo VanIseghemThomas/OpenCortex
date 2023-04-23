@@ -19,5 +19,6 @@ message.ParseFromString(input_data)
 # Convert the message object to a JSON string
 json_string = json_format.MessageToJson(message)
 
-# Print the JSON string to stdout
-sys.stdout.write(json_string)
+# Save the JSON string to a file
+with open("capture.json", "w") as f:
+    f.write(json_string)
