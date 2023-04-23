@@ -14,15 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./sha1.js"></script>
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/js/protobuf.min.js"></script>
+    <script src="assets/js/sha1.js"></script>
+    <script src="assets/js/main.js"></script>
     
 </head>
 
 <body>
     <header>
-        <img src="./images/OpenCortex-logo.png" alt="OpenCortex-logo" class="header-logo">
+        <img src="images/OpenCortex-logo.png" alt="OpenCortex-logo" class="header-logo">
         <h1 class="header-title">OpenCortex file decryption</h1>
     </header>
     
@@ -40,6 +41,15 @@
                 <p>Choose File</p> 
             </label>
             <input class="file-input" id="file-input" type="file">
+        </div>
+        <div class="file-decode">
+            <h3 class="file-decode-label">Decoded File:</h3>
+            <select id="protobuf-list">
+                <option value="">None</option>
+            </select>
+            <div>
+                <textarea id="decrypt-output"></textarea>
+            </div>
         </div>
     </div>
 </body>
