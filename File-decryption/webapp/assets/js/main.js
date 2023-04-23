@@ -10,11 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let decryptToggle = document.getElementById('decrypt-toggle');
     let serialForm = document.getElementById('serial-form');
     var jsonRenderer = document.querySelector('.target');
+    var liveDecoder = document.getElementById('live-decoder');
 
 
     // Don't display the download button until a file is selected
     fileDownloadBtn.style.display = 'none';
     serialForm.style.display = 'none';
+    liveDecoder.style.display = 'none';
 
     fileInput.onchange = () => {
         const reader = new FileReader()
@@ -22,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(e);
             currentFileName = e.target.fileName;
             processFileInput(e);
+
+            // If the filename ends with .cns or pb, we can assume it's a protobuf file
+            if(currentFileName.endsWith('.cns') || currentFileName.endsWith('.pb')){
+                // Enable live decoding
+                liveDecoder.style.display = 'block';
+            }
         });
 
         for (let file of fileInput.files) {
