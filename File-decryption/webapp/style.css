@@ -19,6 +19,18 @@ header {
     background-color: rgb(10,10,10);
 }
 
+footer {
+    padding: 1rem;
+    position: absolute;
+
+    /* put at the bottom of the page */
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    color: rgb(185, 185, 185);
+
+}
+
 input{
     padding: 0.5rem;
     border-radius: 20px;
