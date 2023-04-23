@@ -1,4 +1,8 @@
-# NeuralDSP QuadCortex file decryptor.
+# File decryptor web app
+
+By hosting the contents of the `webapp` folder you will be able to skip all the CLI tools and just drag and drop a file in there. The decryption is ported to JS by [Simone Margaritelli](https://www.evilsocket.net/).
+
+# Quad Cortex file decryptor.
 
 This tool can be used to take one of the encrypted `.cns` or `.json` files, and decrypt them to a usable format. The `.cns` files are actually protobufs and can be decoded with the Python decoder.
 
@@ -40,7 +44,3 @@ pip install protobuf==3.20.*
 ```
 python decode_capture.py <your-file>.cns.dec
 ```
-
-# File decryptor web app
-
-By hosting the contents of the `webapp` folder you will be able to skip all the CLI tools and just drag and drop a file in there. The decryption is ported to JS by [Simone Margaritelli](https://www.evilsocket.net/).
