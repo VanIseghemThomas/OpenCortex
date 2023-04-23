@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package captureProto;
+
+message Capture {
+    float sample_rate = 1;
+    uint32 pre_filter_length = 2;
+    uint32 post_filter_length = 3;
+    repeated float pre_filter_coefficients = 4;
+    repeated float post_filter_coefficients = 5;
+    float constant_pre_gain = 6;
+    float constant_post_gain = 7;
+    uint32 number_of_layers = 8;
+    repeated uint32 layer_sizes = 9;
+    repeated layerWeightsAndBiases weights_and_biases = 10;
+    float high_pass_frequency = 11;
+    float high_pass_bandwidth = 12;
+}
+
+message layerWeightsAndBiases {
+    repeated float weights = 1;
+    repeated float biases = 2;
+}

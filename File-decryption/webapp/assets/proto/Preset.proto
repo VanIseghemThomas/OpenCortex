@@ -1,0 +1,157 @@
+syntax = "proto3";
+
+message BinaryPreset {
+    string name = 2;
+    uint32 hash = 3;
+    string date = 4;
+    float volume = 5;
+    float pan = 6;
+    uint32 default_scene = 7;
+    string author_name = 8;
+    string author_id = 9;
+    uint32 tempo = 10;
+    repeated Chain chains = 11;
+    repeated string tags = 12;
+    repeated LegacyStompModeStompData legacy_stomp_mode_stomp_data = 13;
+    repeated uint32 scene_tempo = 14;
+    repeated string scene_labels = 15;
+    repeated MidiMessageInfo midi_messages = 16;
+    repeated MidiMessageInfo midi_messages_general = 17;
+    repeated Bypass bypass = 18;
+    repeated Model tempoProgramData = 19;
+    repeated uint32 layout_code_1 = 20;
+    repeated uint32 layout_code_2 = 21;
+    repeated string created_version = 22;
+    repeated string modified_version = 23;
+    repeated string oldest_compatible_version = 24;
+    repeated string cloud_id = 25;
+    repeated string description = 26;
+    repeated StompModeAssignment stomp_mode_assignments = 27;
+}
+
+message Chain {
+    repeated Model models = 5;
+    repeated SplitControlPoints split_control_points = 6;
+    repeated Model splitter = 7;
+    repeated Model mixer = 8;
+    repeated Model output_control = 9;
+    repeated SceneBypass splitBypass = 10;
+    repeated SceneBypass mixBypass = 11;
+    repeated Model combined_splitter = 12;
+    repeated Model input_control = 13;
+    
+    oneof _in_portid {
+        uint32 in_portid = 1;
+    }
+    
+    oneof _out_portid {
+        uint32 out_portid = 2;
+    }
+    
+    oneof _row {
+        uint32 row = 14;
+    }
+}
+
+message Model {
+    repeated Param params = 2;
+    repeated Expression bypass_expression = 3;
+    repeated ExpressionBypassInfo expression_bypass_info = 4;
+    
+    oneof _hash {
+        uint32 hash = 1;
+    }
+    
+    oneof _column {
+        uint32 column = 5;
+    }
+}
+
+message SplitControlPoints {
+    int32 split = 1;
+    int32 mix = 2;
+}
+
+message Bypass {
+    repeated ColBypass colBypass = 1;
+    
+    oneof _row {
+        uint32 row = 2;
+    }
+}
+
+message ColBypass {
+    repeated SceneBypass sceneBypass = 1;
+    
+    oneof _column {
+        uint32 column = 2;
+    }
+}
+
+message SceneBypass {
+    bool bypass = 1;
+}
+
+message Param {
+    repeated ParamValue param_values = 5;
+    
+    oneof _expression {
+        int32 expression = 1;
+    }
+    
+    oneof _expression_min {
+        float expression_min = 2;
+    }
+    
+    oneof _expression_max {
+        float expression_max = 3;
+    }
+    
+    oneof _scene_mode {
+        bool scene_mode = 4;
+    }
+    
+    oneof _index {
+        uint32 index = 6;
+    }
+}
+
+message ParamValue {
+    oneof value {
+        int32 int_value = 1;
+        float float_value = 2;
+        string string_value = 3;
+    }
+}
+
+message LegacyStompModeStompData {
+    uint32 row = 1;
+    uint32 column = 2;
+}
+
+message StompModeAssignment {
+    uint32 row = 1;
+    uint32 column = 2;
+    uint32 stomp_index = 3;
+}
+
+message MidiMessageInfo {
+    uint32 type = 1;
+    uint32 channel = 2;
+    uint32 param1 = 3;
+    uint32 param2 = 4;
+    uint32 param3 = 5;
+}
+
+message Expression {
+    int32 expression = 1;
+    float expression_min = 2;
+    float expression_max = 3;
+}
+
+message ExpressionBypassInfo {
+    uint32 type = 1;
+    bool invert = 2;
+    uint32 delay_ms = 3;
+    bool latch_emulation = 4;
+}
