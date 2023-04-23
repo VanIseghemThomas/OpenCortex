@@ -165,10 +165,10 @@ footer button {
     
     background-color: rgb(63, 13, 242);
     color: white;
-    font-size: rem;
     margin: 0.5rem;
     text-align: center;
     min-width: 7rem;
+    font-family: 'IBM Plex sans', sans-serif;
 }
 
 footer button:hover{
