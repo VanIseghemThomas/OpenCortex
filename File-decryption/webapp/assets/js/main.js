@@ -6,17 +6,29 @@ let decodedProtobuf = null;
 document.addEventListener("DOMContentLoaded", function () {
     // handle file uploads
     let fileInput = document.getElementById('file-upload');
+    let fileInputLabel = document.getElementById('file-upload-label');
     let fileDownloadBtn = document.getElementById('file-download');
     let decryptToggle = document.getElementById('decrypt-toggle');
     let serialForm = document.getElementById('serial-form');
     var jsonRenderer = document.querySelector('.target');
     var liveDecoder = document.getElementById('live-decoder');
+    let acknowledgement = document.querySelector('.ethics-message-ack');
 
 
     // Don't display the download button until a file is selected
     fileDownloadBtn.style.display = 'none';
     serialForm.style.display = 'none';
     liveDecoder.style.display = 'none';
+    fileInput.disabled = true;
+
+    // Etics message
+    acknowledgement.addEventListener('click', function () {
+        document.querySelector('.ethics-message').style.display = 'none';
+        // Enable the file input
+        console.log(fileInput)
+        fileInput.disabled = false;
+        fileInputLabel.classList.remove('upload-disabled');
+    });
 
     fileInput.onchange = () => {
         const reader = new FileReader()

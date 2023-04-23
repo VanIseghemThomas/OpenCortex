@@ -32,6 +32,57 @@ header {
     background-color: rgb(10,10,10);
 }
 
+/* media query for mobile devices */
+@media screen and (max-width: 712px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    padding: 1rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    /* put at the bottom of the page */
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    color: rgb(185, 185, 185);
+}
+
+@media screen and (max-width: 712px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+footer p {
+    margin-right: 1rem;
+    width: 100%
+}
+
+footer button {
+    padding: .75rem 0.5rem;
+    border-radius: 20px;
+    border: 3px solid rgb(53, 107, 62, 0);
+    outline-style: none;
+    
+    background-color: rgb(63, 13, 242);
+    color: white;
+    margin: 0.5rem;
+    text-align: center;
+    min-width: 8rem;
+    
+    font-family: 'IBM Plex sans', sans-serif;
+}
+
+footer button:hover{
+    background-color: rgb(98, 13, 255);
+    cursor: pointer;
+}	
+
 input{
     padding: 0.5rem;
     border-radius: 20px;
@@ -191,6 +242,11 @@ input:checked + .slider:before {
 .btn-cta:hover {
     background-color: rgb(98, 13, 255);
     cursor: pointer;
+}
+
+.upload-disabled{
+    background-color: rgb(63, 13, 242, 0.5) !important;
+    cursor: not-allowed !important;
 }
 
 .file-btns .file-upload {
