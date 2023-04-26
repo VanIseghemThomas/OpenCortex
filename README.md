@@ -17,8 +17,6 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 ## Table of contents
 
-Want a more detailed file? Go [here](README_Detailed.md)
-
 - [Summary](#summary)
 - [Opening a shell and gaining root access](#opening-a-shell-and-gaining-root-access)
 - [File access](#file-access)
@@ -114,8 +112,6 @@ Welcome to
 ```
 
 #### BOOM WE'RE IN
-
-Now time for some cleanup. Make sure to be responsible now.
 
 ### Step 5 (optional)
 

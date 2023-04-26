@@ -19,4 +19,4 @@ If you don't want to rename the files manually you can:
 Now replace the `ModelRepo.xml` file inside `/opt/neuraldsp` with the new file. Make sure this is called `ModelRepo.xml`.
 Finally reboot your QC, now you should have all models (except captures) renamed to their real names.
 
-![IMG20221218151130](RenamedModels.png)
+![IMG20221218151130](https://cdn.discordapp.com/attachments/1064519312242638973/1100813500546285739/image.png)
