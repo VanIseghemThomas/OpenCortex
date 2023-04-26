@@ -32,11 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fileInput.onchange = () => {
         const reader = new FileReader()
-        reader.addEventListener('load', (e) => {
-            console.log(e);
+        reader.addEventListener('load', async (e) => {
             currentFileName = e.target.fileName;
-            processFileInput(e);
 
+            const serial = document.getElementById('serial-input').value;
+
+            let main_key = null;
+            if (serial.length > 0) {
+                // local decryption, use master key + serial
+                main_key = new Uint8Array([...MASTER_KEY, ...new TextEncoder("utf-8").encode(serial)]);
+            } else {
+                // global decryption, use master key only
+                main_key = MASTER_KEY;
+            }
+
+            console.log("Decrypting file: " + currentFileName + " with key: " + main_key + " and serial: " + serial);
+            let blob = await decrypt(e.target.result, main_key);
+            console.log(blob);
+            decryptedBlobUrl = window.URL.createObjectURL(blob);
+            
             // If the filename ends with .cns or pb, we can assume it's a protobuf file
             if(currentFileName.endsWith('.cns') || currentFileName.endsWith('.pb')){
                 // Enable live decoding

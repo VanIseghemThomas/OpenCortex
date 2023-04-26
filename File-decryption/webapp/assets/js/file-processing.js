@@ -63,33 +63,61 @@ function deriveKeyAndIV(password, iterations = 10) {
     return { key: key, iv: iv };
 }
 
-function processFileInput(e) {
-    const fileName = e.target.fileName;
-    
-    const serial = document.getElementById('serial-input').value;
-    let main_key = null;
-    if (serial.length > 0) {
-        // local decryption, use master key + serial
-        main_key = new Uint8Array([...MASTER_KEY, ...new TextEncoder("utf-8").encode(serial)]);
-    } else {
-        // global decryption, use master key only
-        main_key = MASTER_KEY;
-    }
-
+async function decryptFile(fileContents, key) {  
     // derive key and iv with our EVP_BytesToKey port
-    const derived = deriveKeyAndIV(main_key);
-    // encrypted file contents
-    const ciphertext = e.target.result;
+    const derived = deriveKeyAndIV(key);
+  
     // import the raw key
-    window.crypto.subtle.importKey("raw", derived.key, "AES-CTR", true, ["encrypt", "decrypt"]).then(function (key) {
-        // decrypt using aes-128-ctr
-        window.crypto.subtle.decrypt({ name: "AES-CTR", counter: derived.iv, length: 128 }, key, ciphertext).then(function (cleartext) {
-            var blob = new Blob([cleartext], { type: "application/octet-stream" });
-            decryptedBlobUrl = window.URL.createObjectURL(blob);
-            currentClearText = cleartext;
-        });
-    });
+    const cryptoKey = await window.crypto.subtle.importKey(
+      "raw",
+      derived.key,
+      "AES-CTR",
+      true,
+      ["encrypt", "decrypt"]
+    );
+  
+    console.log("cryptoKey", cryptoKey)
+
+    // decrypt the file contents using aes-128-ctr
+    const decryptedData = await window.crypto.subtle.decrypt(
+      { name: "AES-CTR", counter: derived.iv, length: 128 },
+      cryptoKey,
+      fileContents
+    );
+  
+    // create a new Blob with the decrypted data
+    const decryptedBlob = new Blob([decryptedData], { type: "application/octet-stream" });
+  
+    return decryptedBlob;
+  }
+  
+
+async function encryptFile(fileContents, key) {  
+    // derive key and iv with our EVP_BytesToKey port
+    const derived = deriveKeyAndIV(key);
+  
+    // import the raw key
+    const cryptoKey = await window.crypto.subtle.importKey(
+        "raw",
+        derived.key,
+        "AES-CTR",
+        true,
+        ["encrypt", "decrypt"]
+    );
+  
+    // encrypt the file contents using aes-128-ctr
+    const encryptedData = await window.crypto.subtle.encrypt(
+        { name: "AES-CTR", counter: derived.iv, length: 128 },
+        cryptoKey,
+        fileContents
+    );
+  
+    // create a new Blob with the encrypted data
+    const encryptedBlob = new Blob([encryptedData], { type: "application/octet-stream" });
+  
+    return encryptedBlob;
 }
+  
 
 function processFileDecode(clearText) {
     const protobufType = document.getElementById('protobuf-list').value;
