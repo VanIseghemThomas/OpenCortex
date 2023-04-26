@@ -13,7 +13,6 @@ I am not responsible for any damage that might be done to your unit, software. D
 ### To NDSP
 
 Unforunately it seems we got of on the wrong foot, for context I (Thomas) got banned on the Discord server for showing a 9 second clip of the RDP solution working and receiving a very positive reaction from the rest of the community. We respect the stance on the matter but not how it was handled. After all, no rules were breached.
-
 **Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority**
 
 ## Table of contents
@@ -52,7 +51,7 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - Running a webserver
 
-## Currently being worked on
+### Currently being worked on
 
 - Building a Discord server
 
@@ -69,13 +68,14 @@ Before I start of listing everything that is discovered, I want to make clear th
   - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
 
 - Creating an external editor
+
   - Preset file stucture is fully reverse-engineered.
 
   - Building the UI
 
   - Testing external editing of presets and it's limitations.
 
-## Things that might work in the future
+### Things that might work in the future
 
 - Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
 
@@ -93,21 +93,19 @@ Before I start of listing everything that is discovered, I want to make clear th
 
   - Got a pretty good idea how this can be done, still have to confirm it working.
 
-# Opening a shell and gaining root access
-
-## Summary
+## Opening a shell and gaining root access
 
 When searching for updates, the Quad Cortex uses a Python script to query NDSP's API for new updates. This can be used as an entry point for running custom code. We will swap out this file out for a custom Python script that allows us to open a reverse shell. We can use that reverse shell to give us persistent access.
 
-## Step 1: take out the SD-card
+### Step 1: take out the SD-card
 
 Have you ever noticed that a Raspberry-Pi uses an SD-card to boot from, well the QC does pretty much the same in a bit more sophisticated way. I could go into detail how this works but that's for another section.
 
-### Before continuing make sure the QC is off and unplugged!
+#### Before continuing make sure the QC is off and unplugged
 
 To get access to the SD-card, you'll have to take of the back of the QC. This is easily done by unscrewing the 4 screws in the corners. Once open, you should see the SD-card in it's slot with a retainer around it. Unscrew the retainer to get access to the SD-card. Now you can push on the SD-card to get it out.
 
-## Step 2: mounting the SD-card
+### Step 2: mounting the SD-card
 
 **For this step it is useful to have a Linux system to work from.**
 When plugging the SD-card into your PC running Windows, it will prompt you that the SD-card is broken and you should format it. **Do not do this!** The reason it does this, is because you're trying to read Linux filesystems that are not supported on Windows. There might be ways to get around that but I'd still recommend just using a Linux system (or a VM) to do this. The guide will continue with this assumption.
@@ -116,7 +114,7 @@ When plugging it into your PC running Linux, you should see 3 partitions being m
 
 The SD-card does in fact contain 4 partitions:
 
-```
+```bash
         Device Boot      Start         End      Blocks  Id System
 /dev/mmcblk0p1              33       32800     1048576  83 Linux
 Partition 1 does not end on cylinder boundary
@@ -131,13 +129,13 @@ these are used for various things. The ones we are interested in, are the first 
 
 The partition we are interrested in, is the first one. This is the partition the QC will use to run it's software. The second one is for redundancy when something goes wrong in the update process from what I understand.
 
-## Step 2.5: optional
+### Step 2.5: optional
 
 **Recommended:** Clone the drive partitions as .img files in case something goes wrong.
 
 **Not Recommended:** If you want to open up the QC and take out the SD-card everytime you want to change something, you can skip the next steps and go to _Editing the default model names_
 
-## Step 3: installing the exploit
+### Step 3: installing the exploit
 
 **Warning! Do not install this file from any shady places and verify the code matches the repository's code. This can be used to leak some very personal information present on the QC.**
 
@@ -154,7 +152,7 @@ Once that's done, we can put the `cloud_updater_custom.py` file and take out the
 
 You can put the SD-card back in the QC and screw the lid back on.
 
-## Step 4: running the exploit
+### Step 4: running the exploit
 
 Note: this might not work if an actual update is available.
 
@@ -174,11 +172,11 @@ Connection received on 192.168.1.236 52824
 /opt/neuraldsp #
 ```
 
-### Congratulations, you are now inside your Quad Cortex!
+#### Congratulations, you are now inside your Quad Cortex
 
 Make sure to be responsible now.
 
-## Step 5: persistent access
+### Step 5: persistent access
 
 [This might be automated in the future using the exploit script]
 
@@ -210,11 +208,11 @@ Welcome to
 #
 ```
 
-### BOOM WE'RE IN!
+#### BOOM WE'RE IN
 
 Now time for some cleanup.
 
-## Step 6: restoring the update script
+### Step 6: restoring the update script
 
 Now that you have persistent access, there is no need to have the exploit anymore. You can keep it, but it poses a security risk and disables the update functionality.
 
@@ -227,25 +225,25 @@ mv cloud_updater_backup.py cloud_updater.py
 
 Now reboot the QC and test if the updater works like it's supposed to.
 
-# File access
+## File access
 
 Still looking for the best way to do this, currenly using the `scp` command to send and receive files from the QC.
 
 Example usage:
 
-#### from PC to QC:
+### from PC to QC
 
 ```console
 scp -P 57284 <QC-ip-address>:<file-path>
 ```
 
-#### from QC to PC
+### from QC to PC
 
 ```console
 scp <PC-ip-address>:<file-path>
 ```
 
-# Editing the default model names
+## Editing the default model names
 
 One thing bothering me (and I think a lot of other people) is the fact that companies like NDSP aren't allowed to ship their models under the real name it is based on. Luckly they keep track of it in the actual model list, but it isn't displayed to the user.
 
@@ -269,7 +267,7 @@ Finally reboot your QC, now you should have all models (except captures) renamed
 
 ![IMG20221218151130](https://user-images.githubusercontent.com/55881698/208303182-8554e62c-96a9-41f2-be0d-1f1f4f564506.jpg)
 
-# External editor (VNC)
+## External editor (VNC)
 
 ![image](https://user-images.githubusercontent.com/55881698/214691276-bbd161bf-eb72-4f96-87ec-aa4255c75e7e.png)
 
@@ -280,10 +278,9 @@ The VNC server we compiled is based on [this project](https://github.com/ponty/f
 **Note:** when connected to the QC over VNC, you might notice a dip in framerate on the device itself. This is normal. It is the device trying to encode the video feed and struggling.
 
 _[Installer and auto-run on boot will be added later]_
-
 _For now you can use it the manual way_
 
-## Installation
+### Installation
 
 In the `External VNC` folder you will find the files `qc_vnc` and `libvncserver.so.1`. Move these to the following locations on the QC:
 
@@ -293,13 +290,13 @@ In the `External VNC` folder you will find the files `qc_vnc` and `libvncserver.
 
 That's it. You can now start the server!
 
-## Usage
+### Usage
 
 ```console
 qc_vnc -f /dev/fb0 -t /dev/input/event0
 ```
 
-# Accessing your backup
+## Accessing your backup
 
 Your backup is available as a compressed archive under `/media/p4/downloaded_backup.tar.gz`
 It only contains your personal files such as captures, presets, ... It does not contain any system files, so it can't be modify
