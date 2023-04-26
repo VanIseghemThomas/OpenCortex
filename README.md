@@ -1,18 +1,22 @@
 # OpenCortex
+
 [![Discord Banner 1](https://discordapp.com/api/guilds/1064519311567360031/widget.png?style=banner2)](https://discord.gg/ef2gBDDSkm)
 
-## A project that opens your Quad Cortex for homebrew software.
+## A project that opens your Quad Cortex for homebrew software
+
 Developing good software is hard, waiting for it might sometimes be equally as hard. With this project waiting might come to an end. Ever wondered: "A desktop file manager or editor might be useful"? You probably have at this point. The goal of OpenCortex is to open up the Quad Cortex and write the software as a community. This way we can get a taste of what is comming and maybe inspire new innovative features. Also if for some reason software support would be dropped , the maintenance could be continued by the community. It also drops the dependecy on the Cortex Cloud for preset sharing. For me personally, it's an awesome way to learn about embedded Linux and many more things.
 
-## Disclaimer:
+### Disclaimer
+
 I am not responsible for any damage that might be done to your unit, software. Doing this might have the potential to void your warranty. This is a project for enthousiasts who like to tinker like myself. I do not intend to cause any difficulties for NDSP / myself and will approach this from an ethical standpoint. I do not condone any misuse of this project. This is purely for educational and quality of life purposes only.
 
 ### To NDSP
-Unforunately it seems we got of on the wrong foot, for context I (Thomas) got banned on the Discord server for showing a 9 second clip of the RDP solution working and receiving a very positive reaction from the rest of the community. We respect the stance on the matter but not how it was handled. After all, no rules were breached. 
+
+Unforunately it seems we got of on the wrong foot, for context I (Thomas) got banned on the Discord server for showing a 9 second clip of the RDP solution working and receiving a very positive reaction from the rest of the community. We respect the stance on the matter but not how it was handled. After all, no rules were breached.
 
 **Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority**
 
-# Table of contents
+## Table of contents
 
 - [Summary](https://github.com/VanIseghemThomas/OpenCortex#summary)
 
@@ -24,9 +28,9 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 - [External editor (VNC)](https://github.com/VanIseghemThomas/OpenCortex#external-editor-vnc)
 
-# Summary
+## Summary
 
-## What is already possible (or in better terms discovered)
+### What is already possible (or in better terms discovered)
 
 Before I start of listing everything that is discovered, I want to make clear that this is currently a 2 man project and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
 
@@ -51,29 +55,28 @@ Before I start of listing everything that is discovered, I want to make clear th
 ## Currently being worked on
 
 - Building a Discord server
-    - Free from any censorship about the QC
+
+  - Free from any censorship about the QC
 
 - Managing your files.
-    
-    - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
 
-    - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the contents aren't really relevant, I just need to find a way to reference the files correctly.
+  - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
 
+  - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the contents aren't really relevant, I just need to find a way to reference the files correctly.
 
 - Creating an external file manager
 
-    - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
-
+  - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
 
 - Creating an external editor
-    
-    - Preset file stucture is fully reverse-engineered.
-    
-    - Building the UI
-    
-    - Testing external editing of presets and it's limitations.
+  - Preset file stucture is fully reverse-engineered.
+
+  - Building the UI
+
+  - Testing external editing of presets and it's limitations.
 
 ## Things that might work in the future
+
 - Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
 
 - Bluetooth: I've stumbled upon some references to bluetooth but haven't looked into it. As far as I know it doesn't have the hardware for it, but maybe it secretly does?
@@ -84,18 +87,17 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 - SD-card upgrade: on paper, when partitioning the SD-card correctly and flashing those with the corresponding .img files (you can clone from the original), you should be able to
 
-- Creating a OpenCortex update URL that can be accessed by the native update menu. 
+- Creating a OpenCortex update URL that can be accessed by the native update menu.
 
 - Expanding preset slots
 
-    - Got a pretty good idea how this can be done, still have to confirm it working.
-
+  - Got a pretty good idea how this can be done, still have to confirm it working.
 
 # Opening a shell and gaining root access
 
 ## Summary
 
-When searching for updates, the Quad Cortex uses a Python script to query NDSP's API for new updates. This can be used as an entry point for running custom code. We will swap out this file out for a custom Python script that allows us to open a reverse shell. We can use that reverse shell to give us persistent access. 
+When searching for updates, the Quad Cortex uses a Python script to query NDSP's API for new updates. This can be used as an entry point for running custom code. We will swap out this file out for a custom Python script that allows us to open a reverse shell. We can use that reverse shell to give us persistent access.
 
 ## Step 1: take out the SD-card
 
@@ -103,9 +105,10 @@ Have you ever noticed that a Raspberry-Pi uses an SD-card to boot from, well the
 
 ### Before continuing make sure the QC is off and unplugged!
 
-To get access to the SD-card, you'll have to take of the back of the QC. This is easily done  by unscrewing the 4 screws in the corners. Once open, you should see the SD-card in it's slot with a retainer around it. Unscrew the retainer to get access to the SD-card. Now you can push on the SD-card to get it out.
+To get access to the SD-card, you'll have to take of the back of the QC. This is easily done by unscrewing the 4 screws in the corners. Once open, you should see the SD-card in it's slot with a retainer around it. Unscrew the retainer to get access to the SD-card. Now you can push on the SD-card to get it out.
 
 ## Step 2: mounting the SD-card
+
 **For this step it is useful to have a Linux system to work from.**
 When plugging the SD-card into your PC running Windows, it will prompt you that the SD-card is broken and you should format it. **Do not do this!** The reason it does this, is because you're trying to read Linux filesystems that are not supported on Windows. There might be ways to get around that but I'd still recommend just using a Linux system (or a VM) to do this. The guide will continue with this assumption.
 
@@ -124,7 +127,7 @@ Partition 3 does not end on cylinder boundary
 /dev/mmcblk0p4           67617      973968    29003264  83 Linux
 ```
 
-these are used for various things. The ones we are interested in, are the first 2. Upon closer investigation you will realize 2 things. They are Linux installs and they seem to be identical. 
+these are used for various things. The ones we are interested in, are the first 2. Upon closer investigation you will realize 2 things. They are Linux installs and they seem to be identical.
 
 The partition we are interrested in, is the first one. This is the partition the QC will use to run it's software. The second one is for redundancy when something goes wrong in the update process from what I understand.
 
@@ -132,8 +135,7 @@ The partition we are interrested in, is the first one. This is the partition the
 
 **Recommended:** Clone the drive partitions as .img files in case something goes wrong.
 
-**Not Recommended:** If you want to open up the QC and take out the SD-card everytime you want to change something, you can skip the next steps and go to *Editing the default model names*
-
+**Not Recommended:** If you want to open up the QC and take out the SD-card everytime you want to change something, you can skip the next steps and go to _Editing the default model names_
 
 ## Step 3: installing the exploit
 
@@ -153,6 +155,7 @@ Once that's done, we can put the `cloud_updater_custom.py` file and take out the
 You can put the SD-card back in the QC and screw the lid back on.
 
 ## Step 4: running the exploit
+
 Note: this might not work if an actual update is available.
 
 [Looking into creating a custom message, if this works update the documentation]
@@ -168,10 +171,11 @@ thomas@pop-os:~/Repos/OpenCortex$ nc -lvp 4444
 Listening on 0.0.0.0 4444
 Connection received on 192.168.1.236 52824
 /bin/sh: can't access tty; job control turned off
-/opt/neuraldsp #  
+/opt/neuraldsp #
 ```
 
-### Congratulations, you are now inside your Quad Cortex! 
+### Congratulations, you are now inside your Quad Cortex!
+
 Make sure to be responsible now.
 
 ## Step 5: persistent access
@@ -186,7 +190,7 @@ You are now able to connect to your QC using SSH as root! Isn't that wonderfull!
 
 So to connect to your QC you can do the following
 
-*Ip address can be found under `settings -> Wi-Fi`*
+_Ip address can be found under `settings -> Wi-Fi`_
 
 ```console
 ssh root@<QC-ip-address> -p 57284
@@ -195,21 +199,23 @@ ssh root@<QC-ip-address> -p 57284
 It will prompt you for your password and after that for a fingerprint, just type "yes", enter and:
 
 ```console
-Welcome to 
- _   _                      _  ______  ___________ 
+Welcome to
+ _   _                      _  ______  ___________
 | \ | |                    | | |  _  \/  ___| ___ \
 |  \| | ___ _   _ _ __ __ _| | | | | |\ `--.| |_/ /
-| . ` |/ _ \ | | | '__/ _` | | | | | | `--. \  __/ 
-| |\  |  __/ |_| | | | (_| | | | |/ / /\__/ / |    
-\_| \_/\___|\__,_|_|  \__,_|_| |___/  \____/\_|    
-                                        Quad Cortex 
-# 
+| . ` |/ _ \ | | | '__/ _` | | | | | | `--. \  __/
+| |\  |  __/ |_| | | | (_| | | | |/ / /\__/ / |
+\_| \_/\___|\__,_|_|  \__,_|_| |___/  \____/\_|
+                                        Quad Cortex
+#
 ```
 
 ### BOOM WE'RE IN!
+
 Now time for some cleanup.
 
 ## Step 6: restoring the update script
+
 Now that you have persistent access, there is no need to have the exploit anymore. You can keep it, but it poses a security risk and disables the update functionality.
 
 To restore this, just remove the custom Python script, and replace it back with the original one. This can be done with the following commands:
@@ -228,11 +234,13 @@ Still looking for the best way to do this, currenly using the `scp` command to s
 Example usage:
 
 #### from PC to QC:
+
 ```console
 scp -P 57284 <QC-ip-address>:<file-path>
 ```
 
 #### from QC to PC
+
 ```console
 scp <PC-ip-address>:<file-path>
 ```
@@ -247,13 +255,13 @@ The models and their respective categories, names and parameters, are stored ins
 
 - Use the `model_renamer.py` script in this repo to generate the XML file
 
-    - Usage:
-    ```console
-    python model_renamer.py <original-modelrepo> <output-file-path>
-    ```   
+  - Usage:
+
+  ```console
+  python model_renamer.py <original-modelrepo> <output-file-path>
+  ```
 
 - Use the pre-generated XML file inside `Model Repositories` (make sure to match it to your CorOS verion)
-
 
 Now replace the `ModelRepo.xml` file inside `/opt/neuraldsp` with the new file. Make sure this is called `ModelRepo.xml`.
 
@@ -271,9 +279,9 @@ The VNC server we compiled is based on [this project](https://github.com/ponty/f
 
 **Note:** when connected to the QC over VNC, you might notice a dip in framerate on the device itself. This is normal. It is the device trying to encode the video feed and struggling.
 
-*[Installer and auto-run on boot will be added later]*
+_[Installer and auto-run on boot will be added later]_
 
-*For now you can use it the manual way*
+_For now you can use it the manual way_
 
 ## Installation
 
