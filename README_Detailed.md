@@ -24,6 +24,7 @@ Want a more simpler file? Go [here](README.md)
 - [File access](#file-access)
 - [Editing the default model names](docs/consumer/Model_Renamer.md)
 - [External editor (VNC)](docs/consumer/VNC.md)
+- [Developer Docs](docs/dev/README.md)
 
 ## Summary
 

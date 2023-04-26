@@ -20,14 +20,11 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 Want a more detailed file? Go [here](README_Detailed.md)
 
 - [Summary](#summary)
-
 - [Opening a shell and gaining root access](#opening-a-shell-and-gaining-root-access)
-
 - [File access](#file-access)
-
 - [Editing the default model names](docs/consumer/Model_Renamer.md)
-
 - [External editor (VNC)](docs/consumer/VNC.md)
+- [Developer Docs](docs/dev/README.md)
 
 ## Summary
 
