@@ -95,8 +95,6 @@ Before I start of listing everything that is discovered, I want to make clear th
 
 ## Opening a shell and gaining root access
 
-When searching for updates, the Quad Cortex uses a Python script to query NDSP's API for new updates. This can be used as an entry point for running custom code. We will swap out this file out for a custom Python script that allows us to open a reverse shell. We can use that reverse shell to give us persistent access.
-
 ### Step 1: take out the SD-card
 
 Have you ever noticed that a Raspberry-Pi uses an SD-card to boot from, well the QC does pretty much the same in a bit more sophisticated way. I could go into detail how this works but that's for another section.
@@ -135,54 +133,17 @@ The partition we are interrested in, is the first one. This is the partition the
 
 **Not Recommended:** If you want to open up the QC and take out the SD-card everytime you want to change something, you can skip the next steps and go to _Editing the default model names_
 
-### Step 3: installing the exploit
+## Step 3: swapping out the shadow file
 
-**Warning! Do not install this file from any shady places and verify the code matches the repository's code. This can be used to leak some very personal information present on the QC.**
+Swap out the `/etc/shadow` file in with the one in this repository. This will change the root password to:
 
-Once inside the first partition, you want to go to the following path: `/opt/neuraldsp`. In here you will see a file called `cloud_updater.py`. **Make sure to back this up!** You will need to temporarily change this out for the `cloud_updater_custom.py` file inside this repo. Before you change this out, you will have to edit the file.
-
-The `cloud_updater_custom.py` script, opens a simple reverse shell. In order for this to work, we have to listen for a reverse shell to be spawned on our PC. The script needs to now where to connect to. This is where we edit the 2 lines. At the top of the file you should see 2 variables, edit these accordingly.
-
-```python
-YOUR_IP = "192.168.1.2" # <--- Edit this to match your PC's ip. Make sure it's on the same subnet.
-YOUR_PORT = 4444    # Can stay the same or something else, rember what this is
+```bash
+OpenCortex
 ```
 
-Once that's done, we can put the `cloud_updater_custom.py` file and take out the `cloud_updater.py` file. Again make sure you keep this file! I suggest you save this copy as `cloud_updater_backup.py` and keep it on the QC and also on your own PC. Now rename the `cloud_updater_custom.py` to `cloud_updater.py`. Next time you go to check for updates on the QC, your custom code will be ran.
+You will be able to log in with this password when using SSH.
 
-You can put the SD-card back in the QC and screw the lid back on.
-
-### Step 4: running the exploit
-
-Note: this might not work if an actual update is available.
-
-[Looking into creating a custom message, if this works update the documentation]
-
-Before doing that, we'll need to listen for the reverse shell. This can be done using a tool called netcat. Open up a terminal and type `nc -lvnp 4444` (or your custom set port).
-
-Now on the QC, go to `Settings -> Device Options -> Device Updates`. When you press the button to start looking for updates, your PC should open a reverse shell.
-
-It should look something like this:
-
-```console
-thomas@pop-os:~/Repos/OpenCortex$ nc -lvp 4444
-Listening on 0.0.0.0 4444
-Connection received on 192.168.1.236 52824
-/bin/sh: can't access tty; job control turned off
-/opt/neuraldsp #
-```
-
-#### Congratulations, you are now inside your Quad Cortex
-
-Make sure to be responsible now.
-
-### Step 5: persistent access
-
-[This might be automated in the future using the exploit script]
-
-When running the `whoami` commmand, you can see that the Python script was being ran as root. This means you now have root access! With this you can do pretty much anything you want, including changing the password to something else.
-
-Run the command `passwd`. This will prompt you to change the root user's password, without confirming the current password.
+### Step 4: persistent access
 
 You are now able to connect to your QC using SSH as root! Isn't that wonderfull! But you may find it won't work for you. No worries this is normal. SSH defaults to port 22. At some point, the QC actually had SSH running on the default port 22 (alongside FTP), but they got rid of those services. So I thought. After a little digging inside the SSH files, I figured out that they didn't get rid of SSH, but they just moved it to port `57284`.
 
@@ -210,20 +171,11 @@ Welcome to
 
 #### BOOM WE'RE IN
 
-Now time for some cleanup.
+Now time for some cleanup. Make sure to be responsible now.
 
-### Step 6: restoring the update script
+### Step 5 (optional)
 
-Now that you have persistent access, there is no need to have the exploit anymore. You can keep it, but it poses a security risk and disables the update functionality.
-
-To restore this, just remove the custom Python script, and replace it back with the original one. This can be done with the following commands:
-
-```console
-rm cloud_updater.py
-mv cloud_updater_backup.py cloud_updater.py
-```
-
-Now reboot the QC and test if the updater works like it's supposed to.
+It is good practice to run the `passwd` command to change your password. Having default passwords is never a good idea.
 
 ## File access
 

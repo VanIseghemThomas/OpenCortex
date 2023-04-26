@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>OpenCortex file decryption/decoder</title>
+    <meta name="title" content="OpenCortex file decryption/decoder">
+    <meta name="description" content="A page that allows you to decrypt and decode files from your Quad Cortex">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/js/protobuf.min.js"></script>
+    <script src="assets/js/sha1.js"></script>
+    <script src="assets/js/json-viewer.js"></script>
+    <script src="assets/js/file-processing.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <img src="images/OpenCortex-logo.png" alt="OpenCortex-logo" class="header-logo">
+        <h1 class="header-title">OpenCortex file decryption</h1>
+    </header>
+    
+    <div class="content">
+        <div class="content-container">
+            <section class="decryption-form">
+                <div class="enable-decryption">
+                    <h2 class="section-title">Decrypt file</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="decrypt-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="serial-input" id="serial-form">
+                    <h3>Enter your Quad Cortex serial number</h3>
+                    <p>(leave blank for global encrypted file)</p>
+                    <input type="text" id="serial-input" />
+                </div>
+            </section>
+
+            <hr/>
+
+            <section class="file-btns">
+                <label class="btn-cta file-input-label file-upload upload-disabled" id="file-upload-label" for="file-upload">
+                    <i class="fa-solid fa-cloud-arrow-up pr-5"></i> 
+                    <p>Choose File</p> 
+                </label>
+                <input class="file-upload-input" id="file-upload" type="file">
+
+                <button class="btn-cta file-download" id="file-download">
+                    <i class="fa-solid fa-cloud-arrow-down pr-5"></i> 
+                    <p>Download File</p>
+                </button>
+            </section>
+                
+            <hr/>
+
+            <section class="file-decode" id="live-decoder">
+                <div class="section-title">
+                    <h3 class="title">Live decoding</h3>
+                </div>
+                <select id="protobuf-list">
+                    <option value="">None</option>
+                </select>
+                <div>
+                    <div id="decrypt-output" class="target"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="ethics-message">
+        <p>
+            We do not condone any misuse or illegal use of this tool as it is intended for educational purposes only. Everything is computed locally using JS and no data is being stored or sent to any server at any time.
+        </p>
+        <button class="ethics-message-ack">I understand</button>
+    </footer>
+</body>
+
+</html>
