@@ -31,48 +31,34 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 ### What is already possible (or in better terms discovered)
 
-Before I start of listing everything that is discovered, I want to make clear that this is currently a 2 man project and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
+Before I start of listing everything that is discovered, I want to make clear that this project has a small team and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
 
 **Everything you see here is tested as working in practice.**
 
 - Gaining persistent access over a network connection.
-
 - Building an RDP solution to use the native CorOS UI live on your pc.
-
 - Renaming the built in amps, pedals, etc. to whatever you like. (reboot required for changes to take effect)
-
 - Getting access to your backup to keep it yourself.
-
 - Deleting / adding presets from another device without reboot.
-
 - Detecting preset switches and which one is loaded.
-
 - Calibrating / testing the touchscreen
-
 - Running a webserver
+- Building a Discord server (lots of dev work is now done here)
+- Captures are currently unsolved now solved. They can be decrypted using the [OpenCortex decryptor](https://vaniseghemthomas.github.io/OpenCortex/File-decryption/webapp/).
 
 ### Currently being worked on
-
-- Building a Discord server
-
-  - Free from any censorship about the QC
 
 - Managing your files.
 
   - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
-
-  - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the contents aren't really relevant, I just need to find a way to reference the files correctly.
 
 - Creating an external file manager
 
   - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
 
 - Creating an external editor
-
   - Preset file stucture is fully reverse-engineered.
-
   - Building the UI
-
   - Testing external editing of presets and it's limitations.
 
 ### Things that might work in the future
@@ -90,7 +76,6 @@ Before I start of listing everything that is discovered, I want to make clear th
 - Creating a OpenCortex update URL that can be accessed by the native update menu.
 
 - Expanding preset slots
-
   - Got a pretty good idea how this can be done, still have to confirm it working.
 
 ## Opening a shell and gaining root access

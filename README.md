@@ -31,73 +31,47 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 ### What is already possible (or in better terms discovered)
 
-Before I start of listing everything that is discovered, I want to make clear that this is currently a 2 man project and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
+Before I start of listing everything that is discovered, I want to make clear that this project has a small team and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
 
 **Everything you see here is tested as working in practice.**
 
 - Gaining persistent access over a network connection.
-
 - Building an RDP solution to use the native CorOS UI live on your pc.
-
 - Renaming the built in amps, pedals, etc. to whatever you like. (reboot required for changes to take effect)
-
 - Getting access to your backup to keep it yourself.
-
 - Deleting / adding presets from another device without reboot.
-
 - Detecting preset switches and which one is loaded.
-
 - Calibrating / testing the touchscreen
-
 - Running a webserver
+- Building a Discord server (lots of dev work is now done here)
+- Captures are currently unsolved now solved. They can be decrypted using the [OpenCortex decryptor](https://vaniseghemthomas.github.io/OpenCortex/File-decryption/webapp/).
 
 ### Currently being worked on
 
-- Building a Discord server
-
-  - Free from any censorship about the QC
-
-- Managing your files.
-
-  - Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
-
-  - Captures are currently unsolved. They seem to be encrypted (for good reasons) and I don't know (yet) how they are referenced inside presets. But since the contents aren't really relevant, I just need to find a way to reference the files correctly.
-
+- Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
 - Creating an external file manager
 
   - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
 
 - Creating an external editor
-
   - Preset file stucture is fully reverse-engineered.
-
   - Building the UI
-
   - Testing external editing of presets and it's limitations.
 
 ### Things that might work in the future
 
 - Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
-
-- Bluetooth: I've stumbled upon some references to bluetooth but haven't looked into it. As far as I know it doesn't have the hardware for it, but maybe it secretly does?
-
-- USB connectivity: Haven't looked into this at all but this may end up in having some interesting things uncovered.
-
-- Remote brightness control: saw some interesting references but haven't looked into it yet.
-
-- SD-card upgrade: on paper, when partitioning the SD-card correctly and flashing those with the corresponding .img files (you can clone from the original), you should be able to
-
+- Bluetooth
+- Custom USB connectivity
+- Remote brightness control
+- SD-card upgrade
 - Creating a OpenCortex update URL that can be accessed by the native update menu.
-
 - Expanding preset slots
-
   - Got a pretty good idea how this can be done, still have to confirm it working.
 
 ## Opening a shell and gaining root access
 
 ### Step 1: take out the SD-card
-
-Have you ever noticed that a Raspberry-Pi uses an SD-card to boot from, well the QC does pretty much the same in a bit more sophisticated way. I could go into detail how this works but that's for another section.
 
 #### Before continuing make sure the QC is off and unplugged
 
@@ -110,8 +84,6 @@ When plugging the SD-card into your PC running Windows, it will prompt you that 
 
 When plugging it into your PC running Linux, you should see 3 partitions being mounted in your file manager. With a bit of luck there might be 4.
 
-The SD-card does in fact contain 4 partitions:
-
 ```bash
         Device Boot      Start         End      Blocks  Id System
 /dev/mmcblk0p1              33       32800     1048576  83 Linux
@@ -123,14 +95,11 @@ Partition 3 does not end on cylinder boundary
 /dev/mmcblk0p4           67617      973968    29003264  83 Linux
 ```
 
-these are used for various things. The ones we are interested in, are the first 2. Upon closer investigation you will realize 2 things. They are Linux installs and they seem to be identical.
-
 The partition we are interrested in, is the first one. This is the partition the QC will use to run it's software. The second one is for redundancy when something goes wrong in the update process from what I understand.
 
 ### Step 2.5: optional
 
 **Recommended:** Clone the drive partitions as .img files in case something goes wrong.
-
 **Not Recommended:** If you want to open up the QC and take out the SD-card everytime you want to change something, you can skip the next steps and go to _Editing the default model names_
 
 ## Step 3: swapping out the shadow file
@@ -145,9 +114,7 @@ You will be able to log in with this password when using SSH.
 
 ### Step 4: persistent access
 
-You are now able to connect to your QC using SSH as root! Isn't that wonderfull! But you may find it won't work for you. No worries this is normal. SSH defaults to port 22. At some point, the QC actually had SSH running on the default port 22 (alongside FTP), but they got rid of those services. So I thought. After a little digging inside the SSH files, I figured out that they didn't get rid of SSH, but they just moved it to port `57284`.
-
-So to connect to your QC you can do the following
+You are now able to connect to your QC using SSH as root! But you may find it won't work for you. SSH defaults to port 22, but the QC uses port `57284` for SSH. So to connect to your QC you can do the following:
 
 _Ip address can be found under `settings -> Wi-Fi`_
 
@@ -193,59 +160,6 @@ scp -P 57284 <QC-ip-address>:<file-path>
 
 ```console
 scp <PC-ip-address>:<file-path>
-```
-
-## Editing the default model names
-
-One thing bothering me (and I think a lot of other people) is the fact that companies like NDSP aren't allowed to ship their models under the real name it is based on. Luckly they keep track of it in the actual model list, but it isn't displayed to the user.
-
-The models and their respective categories, names and parameters, are stored inside `/opt/neuraldsp/ModelRepo.xml`. In order to rename these files to the real deal, you've got a couple of options.
-
-- Rename them manually inside the XML file
-
-- Use the `model_renamer.py` script in this repo to generate the XML file
-
-  - Usage:
-
-  ```console
-  python model_renamer.py <original-modelrepo> <output-file-path>
-  ```
-
-- Use the pre-generated XML file inside `Model Repositories` (make sure to match it to your CorOS verion)
-
-Now replace the `ModelRepo.xml` file inside `/opt/neuraldsp` with the new file. Make sure this is called `ModelRepo.xml`.
-
-Finally reboot your QC, now you should have all models (except captures) renamed to their real names.
-
-![IMG20221218151130](https://user-images.githubusercontent.com/55881698/208303182-8554e62c-96a9-41f2-be0d-1f1f4f564506.jpg)
-
-## External editor (VNC)
-
-![image](https://user-images.githubusercontent.com/55881698/214691276-bbd161bf-eb72-4f96-87ec-aa4255c75e7e.png)
-
-Since we've figured out how to cross-compile our own binaries, we were able to compile a VNC solution for the Quad Cortex.
-
-The VNC server we compiled is based on [this project](https://github.com/ponty/framebuffer-vncserver). We had to modify the source code a bit to make it work with the touchscreen. But besides that, it is identical. This patch was necesarry because the touchscreen doesn't report it's width and height in a propper way.
-
-**Note:** when connected to the QC over VNC, you might notice a dip in framerate on the device itself. This is normal. It is the device trying to encode the video feed and struggling.
-
-_[Installer and auto-run on boot will be added later]_
-_For now you can use it the manual way_
-
-### Installation
-
-In the `External VNC` folder you will find the files `qc_vnc` and `libvncserver.so.1`. Move these to the following locations on the QC:
-
-- **qc_vnc:** `/bin`
-
-- **libvncserver.so.1**: `/lib`
-
-That's it. You can now start the server!
-
-### Usage
-
-```console
-qc_vnc -f /dev/fb0 -t /dev/input/event0
 ```
 
 ## Accessing your backup
