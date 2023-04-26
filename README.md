@@ -17,23 +17,27 @@ Unforunately it seems we got of on the wrong foot, for context I (Thomas) got ba
 
 ## Table of contents
 
-- [Summary](https://github.com/VanIseghemThomas/OpenCortex#summary)
+Want a more detailed file? Go [here](README_Detailed.md)
 
-- [Opening a shell and gaining root access](https://github.com/VanIseghemThomas/OpenCortex#opening-a-shell-and-gaining-root-access)
+- [Summary](#summary)
 
-- [File access](https://github.com/VanIseghemThomas/OpenCortex#file-access)
+- [Opening a shell and gaining root access](#opening-a-shell-and-gaining-root-access)
 
-- [Editing the default model names](https://github.com/VanIseghemThomas/OpenCortex#editing-the-default-model-names)
+- [File access](#file-access)
 
-- [External editor (VNC)](https://github.com/VanIseghemThomas/OpenCortex#external-editor-vnc)
+- [Editing the default model names](docs/consumer/Model_Renamer.md)
+
+- [External editor (VNC)](docs/consumer/VNC.md)
 
 ## Summary
 
 ### What is already possible (or in better terms discovered)
 
+**For detailed research go to the [Dev Docs](docs/dev/README.md)**
+
 Before I start of listing everything that is discovered, I want to make clear that this project has a small team and we're doing our best to do as much as possible in the time we've got available. A lot of things are still in progress but every day new things get discovered. There is a lot to look at and not everything can be done at the same time. we'll try to prioritise but roadblocks will be hit.
 
-**Everything you see here is tested as working in practice.**
+#### Currently Working Features
 
 - Gaining persistent access over a network connection.
 - Building an RDP solution to use the native CorOS UI live on your pc.
@@ -42,32 +46,8 @@ Before I start of listing everything that is discovered, I want to make clear th
 - Deleting / adding presets from another device without reboot.
 - Detecting preset switches and which one is loaded.
 - Calibrating / testing the touchscreen
-- Running a webserver
 - Building a Discord server (lots of dev work is now done here)
 - Captures are currently unsolved now solved. They can be decrypted using the [OpenCortex decryptor](https://vaniseghemthomas.github.io/OpenCortex/File-decryption/webapp/).
-
-### Currently being worked on
-
-- Manual backup management (Is it possible to load a backup saved externally? From what I've already seen, yes!)
-- Creating an external file manager
-
-  - It is now possible to view the available presets given the XML file. In the future this will be fetched from an API running on the QC
-
-- Creating an external editor
-  - Preset file stucture is fully reverse-engineered.
-  - Building the UI
-  - Testing external editing of presets and it's limitations.
-
-### Things that might work in the future
-
-- Creating an external controller: it is possible to detect preset changes and which preset is currently loaded. This can be used together with MIDI commands to create a controller that could display the current preset (like the Kemper controller).
-- Bluetooth
-- Custom USB connectivity
-- Remote brightness control
-- SD-card upgrade
-- Creating a OpenCortex update URL that can be accessed by the native update menu.
-- Expanding preset slots
-  - Got a pretty good idea how this can be done, still have to confirm it working.
 
 ## Opening a shell and gaining root access
 
