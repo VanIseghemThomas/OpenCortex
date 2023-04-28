@@ -1,6 +1,6 @@
 # Captures
 
-[Back to developer documentaion main page](README.md)
+[Back to developer documentation main page](README.md)
 
 [Captures can now be decryped here](https://vaniseghemthomas.github.io/OpenCortex/File-decryption/webapp/)
 
