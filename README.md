@@ -6,14 +6,15 @@
 
 Developing good software is hard, waiting for it might sometimes be equally as hard. With this project waiting might come to an end. Ever wondered: "A desktop file manager or editor might be useful"? You probably have at this point. The goal of OpenCortex is to open up the Quad Cortex and write the software as a community. This way we can get a taste of what is comming and maybe inspire new innovative features. Also if for some reason software support would be dropped , the maintenance could be continued by the community. It also drops the dependecy on the Cortex Cloud for preset sharing. For me personally, it's an awesome way to learn about embedded Linux and many more things.
 
+Sadly we are not able to share all our discoveries. This because we are not trying to infirnge on NDSP's IP. At this point we pretty much know everthing there is to know about it, but some things are just not able to be made public. We will do our best to share the most we can, but there are boundaries to it.
+
 ### Disclaimer
 
 I am not responsible for any damage that might be done to your unit, software. Doing this might have the potential to void your warranty. This is a project for enthousiasts who like to tinker like myself. I do not intend to cause any difficulties for NDSP / myself and will approach this from an ethical standpoint. I do not condone any misuse of this project. This is purely for educational and quality of life purposes only.
 
 ### To NDSP
 
-Unforunately it seems we got of on the wrong foot, for context I (Thomas) got banned on the Discord server for showing a 9 second clip of the RDP solution working and receiving a very positive reaction from the rest of the community. We respect the stance on the matter but not how it was handled. After all, no rules were breached.
-**Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority**
+**Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority. If at any point this project steps over any line, feel free to contact us.**
 
 ## Table of contents
 
@@ -42,7 +43,7 @@ Before I start of listing everything that is discovered, I want to make clear th
 - Detecting preset switches and which one is loaded.
 - Calibrating / testing the touchscreen
 - Building a Discord server (lots of dev work is now done here)
-- Captures are currently unsolved now solved. They can be decrypted using the [OpenCortex decryptor](https://vaniseghemthomas.github.io/OpenCortex/File-decryption/webapp/).
+- Captures are now solved. They can be decrypted using the [OpenCortex decryptor](https://vaniseghemthomas.github.io/OpenCortex/File-decryption/webapp/).
 
 ## Opening a shell and gaining root access
 
