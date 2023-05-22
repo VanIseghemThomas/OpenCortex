@@ -15,21 +15,20 @@ class CorOS_Downloader:
         "2.0.1": "cIR97IrfvF4fKfO5_KIm_j_aP2zGiHp_",
     }
 
-    # Hardcoded values, might be moved to a config file
-    service = "execute-api"
-    host = "config-api.neuraldsp.com"
-    endpoint = "/api/v1/config/firmware/latest"
-    stage = ""
-    firmwareType = "update_QC_rev5.bin"
-    filename = "update"
-    access_key = "raphael_zpu"
-    secret_key = "a540MUwH+cjmBEg1mNFKKsXwoRerk/IPWoQP+UDFo0M="
-
     def __init__(self, version, updatermode, download_dir):
         self.firmwareVersion = self.firmware_version_lut[version]
         self.download_dir = download_dir
         self.updatermode = updatermode
-    
+        
+        config = json.load(open("config.json"))
+        self.access_key = config["access_key"]
+        self.secret_key = config["secret_key"]
+        self.host = config["host"]
+        self.stage = config["stage"]
+        self.endpoint = config["endpoint"]
+        self.firmwareType = config["firmwareType"]
+        self.filename = config["filename"]
+
     @property
     def url(self):
         return "https://{}{}{}".format(self.host, self.stage, self.endpoint)

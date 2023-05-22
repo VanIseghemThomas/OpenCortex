@@ -1,0 +1,10 @@
+{
+    "service": "execute-api",
+    "host": "config-api.neuraldsp.com",
+    "endpoint": "/api/v1/config/firmware/latest",
+    "stage": "",
+    "firmwareType": "update_QC_rev5.bin",
+    "filename": "update",
+    "access_key": "raphael_zpu",
+    "secret_key": "a540MUwH+cjmBEg1mNFKKsXwoRerk/IPWoQP+UDFo0M="
+}
