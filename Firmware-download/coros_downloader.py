@@ -6,17 +6,23 @@ import json
 import sys
 from tqdm import tqdm
 import requests
+import argparse
 
-download_dir = "./"
-updater_mode = "download"
+parser = argparse.ArgumentParser(description='COROS firmware downloader')
+parser.add_argument('--download_dir', '-d', help='download directory', default="./", required=False)
+parser.add_argument('--updater_mode', '-u', help='Choose either "download" or "check"', default="download", required=False)
+args = parser.parse_args()
 
-class CorOS_Downloader:
+
+class coros_downloader:
+    # Can't be used yet since discovered endpoint only returns the latest version
     firmware_version_lut = {
+        "2.0.0": "vm44GCkrMujYR8o47OkF8UW.AdVYyu0U",
         "2.0.1": "cIR97IrfvF4fKfO5_KIm_j_aP2zGiHp_",
     }
 
-    def __init__(self, version, updatermode, download_dir):
-        self.firmwareVersion = self.firmware_version_lut[version]
+    def __init__(self, updatermode, download_dir):
+        self.firmwareVersion = ""
         self.download_dir = download_dir
         self.updatermode = updatermode
         
@@ -119,7 +125,7 @@ class CorOS_Downloader:
                 self.download_file(url, versionId)
             else:
                 if message:
-                    print("No new version available")
+                    print(message)
                 else:
                     print("Try again later, server busy")
         except:
@@ -144,15 +150,37 @@ class CorOS_Downloader:
         output = response.text
         return output
 
-    def download(self):
-        initial_request = self.initial_request()
-        if self.updatermode == "check":
-            self.check_update(initial_request)
-        elif self.updatermode == "download":
-            self.updater_download(initial_request)
+    def download(self, disable_prompt=False):
+        if self.firmwareVersion == "" and disable_prompt == False:
+            proceed = input("Do you want to proceed with downloading the latest version? (y/n): ")
+
+            if proceed.lower() == "y":
+                initial_request = self.initial_request()
+                if self.updatermode == "check":
+                    self.check_update(initial_request)
+                elif self.updatermode == "download":
+                    self.updater_download(initial_request)
+            elif proceed.lower() == "n":
+                print("Exiting...")
+                sys.exit(0)
+
+            else:
+                print("Invalid input!")
+                self.download()
+
 
 
 if __name__ == "__main__":
-    print("CorOS Downloader started")
-    downloader = CorOS_Downloader("2.0.1", updater_mode, download_dir)
+    banner = """
+       ____                   ______           __           
+      / __ \____  ___  ____  / ____/___  _____/ /____  _  __
+     / / / / __ \/ _ \/ __ \/ /   / __ \/ ___/ __/ _ \| |/_/
+    / /_/ / /_/ /  __/ / / / /___/ /_/ / /  / /_/  __/>  <  
+    \____/ .___/\___/_/ /_/\____/\____/_/   \__/\___/_/|_|  
+        /_/                       CorOS firmware downloader tool                                                  
+    
+    """
+    print("\033[92m" + banner + "\033[0m")
+
+    downloader = coros_downloader(args.updater_mode, args.download_dir)
     downloader.download()
