@@ -85,10 +85,14 @@ Swap out the `/etc/shadow` file in with the one in this repository. This will ch
 ```bash
 OpenCortex
 ```
-
 You will be able to log in with this password when using SSH.
 
-### Step 4: persistent access
+## Step 4: prevent the sshd service from being terminated
+
+Since the 2.0.3 update, there is an effort to stop people from connecting over SSH by disabling it in `/etc/init.d/S80drvinit` . But since it's probably used internally, they couldn't get rid of it.
+To keep the sshd service enabled, add the following empty file: `/opt/neuraldsp/allow_sshd`. This can easily be done using the `touch` command.
+
+### Step 5: persistent access
 
 You are now able to connect to your QC using SSH as root! But you may find it won't work for you. SSH defaults to port 22, but the QC uses port `57284` for SSH. So to connect to your QC you can do the following:
 
@@ -114,7 +118,7 @@ Welcome to
 
 #### BOOM WE'RE IN
 
-### Step 5 (optional)
+### Step 6 (optional)
 
 It is good practice to run the `passwd` command to change your password. Having default passwords is never a good idea.
 
