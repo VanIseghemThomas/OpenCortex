@@ -7,6 +7,10 @@ import sys
 from tqdm import tqdm
 import requests
 import argparse
+from markdownify import markdownify
+from rich.console import Console
+from rich.markdown import Markdown
+import sys
 
 parser = argparse.ArgumentParser(description='COROS firmware downloader')
 parser.add_argument('--download_dir', '-d', help='download directory', default="./", required=False)
@@ -25,6 +29,7 @@ class coros_downloader:
         self.firmwareVersion = ""
         self.download_dir = download_dir
         self.updatermode = updatermode
+        self.showed_disclaimer = False
         
         config = json.load(open("config.json"))
         self.access_key = config["access_key"]
@@ -78,8 +83,17 @@ class coros_downloader:
 
     def download_changelog(self, url):
         file = '{}/changelog'.format(self.download_dir)
-        
         urllib.request.urlretrieve(url, file, self._progress_callback)
+        
+        print("Changelog:\n")
+
+        # Convert the HTML to Markdown
+        changelog_html = open(file, "r").read()
+        changelog_md = markdownify(changelog_html, heading_style="ATX")
+
+        console = Console()
+        markdown = Markdown(changelog_md)
+        console.print(markdown)
 
     def check_update(self, output):
         try:
@@ -90,11 +104,10 @@ class coros_downloader:
             changelogUrl = parsed.get("changelogUrl")
             if url:
                 print(f"New version available, versionId: {versionId}.")
-                print(f"url: {url}")
+                print(f"url: {url}\n")
 
                 if changelogUrl:
                     print ("New changelog available")
-                    print (f"changelogUrl: {changelogUrl}")
                     self.download_changelog(changelogUrl)
                 else:
                     print ("No new changelog found")
@@ -151,22 +164,32 @@ class coros_downloader:
         return output
 
     def download(self, disable_prompt=False):
-        if self.firmwareVersion == "" and disable_prompt == False:
+        if(self.showed_disclaimer == False):
+            print("\033[95m[Disclaimer] This tool downloads the CorOS firmware straight from the official server.")
+            print("We do not own/distribute the firmware downloaded.\n \033[0m")
+            self.showed_disclaimer = True
+
+        proceed = "y"
+        if self.firmwareVersion == "" and disable_prompt == False and self.updatermode == "download":
             proceed = input("Do you want to proceed with downloading the latest version? (y/n): ")
+            print("")
 
-            if proceed.lower() == "y":
-                initial_request = self.initial_request()
-                if self.updatermode == "check":
-                    self.check_update(initial_request)
-                elif self.updatermode == "download":
-                    self.updater_download(initial_request)
-            elif proceed.lower() == "n":
-                print("Exiting...")
-                sys.exit(0)
-
+        if proceed.lower() == "y":
+            initial_request = self.initial_request()
+            if self.updatermode == "check":
+                self.check_update(initial_request)
+            elif self.updatermode == "download":
+                self.updater_download(initial_request)
             else:
-                print("Invalid input!")
-                self.download()
+                print("Invalid updater mode! Choose between 'check' and 'download'")
+                sys.exit(1)
+        elif proceed.lower() == "n":
+            print("Exiting...")
+            sys.exit(0)
+
+        else:
+            print("Invalid input!")
+            self.download()
 
 
 
