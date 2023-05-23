@@ -1,17 +1,17 @@
 # Docker compose file for easy volume mounting and running of the container
 
 services:
-  cortex-dev:
-    image: cortex-dev:latest
+  coros-dev:
+    image: opencortex/coros-dev:latest
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ../
+      dockerfile: CorOS-build-env/Dockerfile
       tags:
-        - cortex-dev:latest
+        - opencortex/coros-dev:latest
 
     volumes:
-      - ./filesystems:/qc-fs
-      - ./mount:/mnt
+      - ../filesystems:/qc-fs
+      - ../mount:/mnt
 
     environment:
       # Edit this to your needs. This should be just the file name, not the path.
