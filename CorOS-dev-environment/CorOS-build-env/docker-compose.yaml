@@ -17,5 +17,9 @@ services:
       # Edit this to your needs. This should be just the file name, not the path.
       - UPDATE_FILE=verify.bin.gz
 
+    # Port forward the VNC port
+    ports:
+      - "5900:5900"  
+
     privileged: true
     entrypoint: /bin/bash -c "while true; do sleep 1; done"
