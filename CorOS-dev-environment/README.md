@@ -1,16 +1,10 @@
 # A safe development environment
 
-## Usage
+## Getting the update file
 
-### Building the container
+You can use the Python tool for downloading the latest firmware. You can find it in this repository under the `Firmware-download` folder. This will download the latest CorOS version from the official NeuralDSP server.
 
-Go into the QC-dev-environment directory and run:
-
-```
-docker build . -t <your-wanted-tag e.g. cortex-dev>
-```
-
-### Getting the update file
+***[Alternative] The old way***
 
 The update process of the QC is done in 2 steps. First the download, after that the install. We can use this to our advantage to grab the actual update file. Once you downloaded the update **do not install it yet.** Get an SSH shell going and go to `/media/p4`. There you will find your update file. A registry of these file names is also available inside the `filesystems/README.md` of this folder.
 
@@ -18,33 +12,32 @@ You can use the `scp` tool to send this update file over to your system.
 
 Once you've got the update file, you can put it inside the `filesystems` directory to mount to the docker container. Now you can use the update file to explore your QC (except for the user files), and even create custom update packages.
 
-### Running the container
+## Running the container
 
-It needs to run privileged since we need to run the `mount` command inside it. You can run it without the `--privileged` path if you're not planning to mount the QC's file system and just want to compile something.
+**The easier** way is to use `docker compose`. In the `docker-compose.yaml` file, all volumes are already defined. This means you only have to define the update file in the `environment` section.
 
-The `mount` folder is optional. But it's an easy way to get files from to host inside the container and vice versa.
-
-```
-docker run --privileged -it -p 5900:5900 \
-    -v <absolute-path-to-current-folder>/mount:/mnt \
-    -v <absolute-path-to-current-folder>/filesystems:/qc-fs \
-    -e UPDATE_FILE=<update-file-name> \
-    cortex-dev
-```
-
-Another way is to use `docker compose`. In the `docker-compose.yaml` file, all volumes are already defined. This means you only have to define the update file in the `environment` section.
-
-To use this first run the service in detached mode
+To use this first run the service in detached mode. **Make sure to build the CorOS-emulation container first if you want to use the CorOS-build-env one!**
 
 ```
-docker compose up -d
+docker compose up -d --build
 ```
 
-After that you can attach to the container using
+After that you can attach to the container using Docker Desktop and running the `bash` command.
+
+If Docker Desktop isn't your cup of tea, you can always do it the CLI way. First identify the container by running `docker ps` and look for your `opencortex/coros-<target>:latest` containers.
 
 ```
-docker compose exec cortex-dev /bin/bash
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS          PORTS     NAMES
+e94bc7cd6045   opencortex/coros-emu:latest   "/bin/bash -c 'while…"   5 minutes ago    Up 5 minutes              coros-emulation-coros-emu-1
+a81a4c3249c9   opencortex/coros-dev:latest   "/bin/bash -c 'while…"   41 minutes ago   Up 41 minutes             coros-build-env-coros-dev-1
 ```
+
+Then you can attach to it by running
+```
+docker compose exec <NAME or CONTAINER ID> /bin/bash
+```
+
+### Initializing the environment
 
 When attached to the docker container's shell, there is one post-install step left. Run the following command:
 
