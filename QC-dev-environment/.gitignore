@@ -1,7 +1,0 @@
-# ignore everything in the mount folder except the filesystems folder
-# and the mount folder itself
-
-/mount/*
-/filesystems/*
-!/mount
-!/filesystems/README.md
