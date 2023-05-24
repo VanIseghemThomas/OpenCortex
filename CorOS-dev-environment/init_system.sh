@@ -16,17 +16,23 @@ echo -e "${NC}"
 echo -e "${BLUE}========= Initializing CorOS emulation environment =========${NC}"
 
 echo ""
-echo -e "${YELLOW}[!]${NC} Mounting the QC-filesystem, this can take a couple of seconds..."
+echo -e "${YELLOW}[!]${NC} Mounting the CorOS update, this can take a couple of seconds..."
 # Decompress archive and mount rootfs.ext3
-gunzip -d -k /qc-fs/$UPDATE_FILE
-# Run tar command on the decompressed file to extract the rootfs.ext3 file
-# We need to remove the .gz extension from the file name
-tar -xvf /qc-fs/${UPDATE_FILE::-3} -C /qc-fs-uncompressed
-rm /qc-fs/${UPDATE_FILE::-3}
+tar -xvf /qc-fs/$UPDATE_FILE -C /qc-fs-uncompressed
 
 echo "Mounting rootfs.ext3"
 mount -t ext4 /qc-fs-uncompressed/rootfs.ext3 $QEMU_LD_PREFIX
 echo -e "${YELLOW}Mounting rootfs.ext3 finished!${NC}"
+echo ""
+
+echo -e "${YELLOW}[!]${NC} Setting up the CorOS file system..."
+echo "Creating /etc/resolv.conf"
+rm  $QEMU_LD_PREFIX/etc/resolv.conf
+echo "nameserver 8.8.8.8" >> $QEMU_LD_PREFIX/etc/resolv.conf
+echo "nameserver 8.8.4.4" >> $QEMU_LD_PREFIX/etc/resolv.conf
+
+echo "Creating /media/p4"
+mkdir -p $QEMU_LD_PREFIX/media/p4
 echo ""
 
 # Promt the user to install custom QT
