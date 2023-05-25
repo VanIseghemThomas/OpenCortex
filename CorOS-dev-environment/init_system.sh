@@ -1,6 +1,7 @@
 #!/bin/bash
 BLUE='\033[0;34m'  
 YELLOW='\033[1;33m'
+RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 # echo the ascii art banner
@@ -19,6 +20,16 @@ echo ""
 echo -e "${YELLOW}[!]${NC} Mounting the CorOS update, this can take a couple of seconds..."
 # Decompress archive and mount rootfs.ext3
 tar -xvf /qc-fs/$UPDATE_FILE -C /qc-fs-uncompressed
+if [ $? -ne 0 ]
+then
+    # Check if the file exists
+    if [ ! -f /qc-fs/$UPDATE_FILE ]; then
+        echo -e "${RED}Error: $UPDATE_FILE does not exist${NC}"
+    else
+        echo -e "${RED}Error: Failed to extract $UPDATE_FILE${NC}"
+    fi
+    exit 1
+fi
 
 echo "Mounting rootfs.ext3"
 mount -t ext4 /qc-fs-uncompressed/rootfs.ext3 $QEMU_LD_PREFIX
@@ -56,7 +67,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     echo ""
     echo "[->] Chrooting into $QEMU_LD_PREFIX"
-    echo $(uname -a)
+    chroot $QEMU_LD_PREFIX sh -c "uname -a" && chroot $QEMU_LD_PREFIX/
     echo ""
-    chroot $QEMU_LD_PREFIX
 fi
