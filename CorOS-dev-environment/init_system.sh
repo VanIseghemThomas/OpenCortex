@@ -37,13 +37,14 @@ echo -e "${YELLOW}Mounting rootfs.ext3 finished!${NC}"
 echo ""
 
 echo -e "${YELLOW}[!]${NC} Setting up the CorOS file system..."
-echo "Creating /etc/resolv.conf"
-rm  $QEMU_LD_PREFIX/etc/resolv.conf
-echo "nameserver 8.8.8.8" >> $QEMU_LD_PREFIX/etc/resolv.conf
-echo "nameserver 8.8.4.4" >> $QEMU_LD_PREFIX/etc/resolv.conf
+echo "Mounting /etc/resolv.conf"
+rm $QEMU_LD_PREFIX/etc/resolv.conf && touch $QEMU_LD_PREFIX/etc/resolv.conf
+mount --bind /etc/resolv.conf $QEMU_LD_PREFIX/etc/resolv.conf
 
 echo "Creating /media/p4"
 mkdir -p $QEMU_LD_PREFIX/media/p4
+echo "Creating /media/ext and mounting host /mnt on it"
+mkdir -p $QEMU_LD_PREFIX/media/ext && mount --bind /mnt $QEMU_LD_PREFIX/media/ext
 echo ""
 
 # Promt the user to install custom QT
@@ -66,7 +67,7 @@ read -p "Do you want to chroot into the created QC-filesystem? (y/n) " -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     echo ""
-    echo "[->] Chrooting into $QEMU_LD_PREFIX"
+    echo "${YELLOW}[->]${NC} Chrooting into $QEMU_LD_PREFIX"
     chroot $QEMU_LD_PREFIX sh -c "uname -a" && chroot $QEMU_LD_PREFIX/
     echo ""
 fi
