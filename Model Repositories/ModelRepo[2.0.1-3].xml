@@ -1195,28 +1195,28 @@
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="2017" name="Ampeg Heritage B15N" blob="ampeg_pfb15_ch6464" tm="Based on Ampeg® Heritage® B15N®" style="">
+        <Model id="2017" name="Ampeg Heritage B15N 6464" blob="ampeg_pfb15_ch6464" tm="Based on Ampeg® Heritage® B15N®" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MASTER" type="float" min="0" max="10" defaultValue="1" units="" />
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="2018" name="Ampeg Heritage B15N" blob="ampeg_pfb15_ch6466" tm="Based on Ampeg® Heritage® B15N®" style="">
+        <Model id="2018" name="Ampeg Heritage B15N 6466" blob="ampeg_pfb15_ch6466" tm="Based on Ampeg® Heritage® B15N®" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MASTER" type="float" min="0" max="10" defaultValue="1" units="" />
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="2019" name="Ampeg Heritage B15N" blob="ampeg_pfb15_ch6664" tm="Based on Ampeg® Heritage® B15N®" style="">
+        <Model id="2019" name="Ampeg Heritage B15N 6664" blob="ampeg_pfb15_ch6664" tm="Based on Ampeg® Heritage® B15N®" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MASTER" type="float" min="0" max="10" defaultValue="1" units="" />
          <Parameter name="OUTPUT" type="float" min="-60" max="12" skew="3.8018" defaultValue="0.0" min_string="OFF" units="dB" />
         </Model>
 
-        <Model id="2020" name="Ampeg Heritage B15N" blob="ampeg_pfb15_ch6666" tm="Based on Ampeg® Heritage® B15N®" style="">
+        <Model id="2020" name="Ampeg Heritage B15N 6666" blob="ampeg_pfb15_ch6666" tm="Based on Ampeg® Heritage® B15N®" style="">
          <Parameter name="BASS" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="TREBLE" type="float" min="0" max="10" defaultValue="5" units="" />
          <Parameter name="MASTER" type="float" min="0" max="10" defaultValue="1" units="" />
