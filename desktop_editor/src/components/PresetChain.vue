@@ -25,8 +25,11 @@
     </div>
 </template>
 
+Sure, here is how I would refactor the script part of your Vue component:
+
+```javascript
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, computed } from 'vue';
 import PresetBlock from '@/components/PresetBlock.vue';
 
 export default defineComponent({
@@ -43,32 +46,27 @@ export default defineComponent({
 
     emits: ['show-params'],
 
-    data(){
-        return{
-            chainObjects: [] as any
-        }
-    },
-    mounted(){
-        const models: any = this.chain.models;
-        const controlPoint = {"type": "controlPoint", "value": 0, "loc": 0};
-        const chainSplitControlPoints = this.chain.splitControlPoints;
+    computed: {
+        chainObjects() {
+            const controlPoint = {"type": "controlPoint", "value": 0, "loc": 0};
+            const models = this.chain.models;
+            const chainSplitControlPoints = this.chain.splitControlPoints;
 
-        this.chainObjects.push(controlPoint);
-        for(let i = 0; i < models.length; i++){
-            this.chainObjects.push(models[i]);
-            let cp = {"type": "controlPoint", "value": 0, "loc": i};
-            cp.loc = i + 1;
+            let chainObjects = [controlPoint];
 
-            for(let j = 0; j < chainSplitControlPoints.length; j++){
-                if(chainSplitControlPoints[j].split == i + 1){
-                    cp.value = 1;
+            models.forEach((model, i) => {
+                chainObjects.push(model);
+                let cp = {"type": "controlPoint", "value": 0, "loc": i + 1};
+
+                const splitControlPoint = chainSplitControlPoints.find(cp => cp.split === i + 1 || cp.mix === i + 1);
+                if (splitControlPoint) {
+                    cp.value = splitControlPoint.split === i + 1 ? 1 : 2;
                 }
-                else if(chainSplitControlPoints[j].mix == i + 1){
-                    cp.value = 2;
-                }
-            }
 
-            this.chainObjects.push(cp);
+                chainObjects.push(cp);
+            });
+
+            return chainObjects;
         }
     },
 
@@ -79,6 +77,9 @@ export default defineComponent({
     }
 })    
 </script>
+```
+
+This refactored version uses computed properties and array methods to make the code more readable and efficient. It also simplifies the creation of control points.
 
 <style scoped lang="scss">
 .chain {
