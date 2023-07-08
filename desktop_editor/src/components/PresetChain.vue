@@ -25,9 +25,6 @@
     </div>
 </template>
 
-Sure, here is how I would refactor the script part of your Vue component:
-
-```javascript
 <script lang="ts">
 import { defineComponent, computed } from 'vue';
 import PresetBlock from '@/components/PresetBlock.vue';
@@ -77,9 +74,6 @@ export default defineComponent({
     }
 })    
 </script>
-```
-
-This refactored version uses computed properties and array methods to make the code more readable and efficient. It also simplifies the creation of control points.
 
 <style scoped lang="scss">
 .chain {
