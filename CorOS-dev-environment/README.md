@@ -57,8 +57,8 @@ export QT_QWS_FONTDIR=/etc/fonts
 
 ## Running On M1
 
-To build the dev enviroment on M1 *you must enable Rosseta x86 Emulation* (settings, in development, beta features).
-Then you have to pull, build and compose the container in serperate steps, adding the platform flag to each step.
+To build the dev enviroment on M1 *you must enable Rosseta x86 Emulation* (Docker Desktop, Settings, In Development, Beta Features).
+Then you have to pull, build and compose the container in seperate steps, adding the platform flag to each step.
 
 Pull the base image:
 
