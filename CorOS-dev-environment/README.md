@@ -16,6 +16,8 @@ Once you've got the update file, you can put it inside the `filesystems` directo
 
 **The easier** way is to use `docker compose`. In the `docker-compose.yaml` file, all volumes are already defined. This means you only have to define the update file in the `environment` section.
 
+**[Click here for ARM and M1](#Running-On-M1)**
+
 To use this first run the service in detached mode. **Make sure to build the CorOS-emulation container first if you want to use the CorOS-build-env one!**
 
 ```
@@ -51,6 +53,29 @@ To link QT to the right fonts folder, run:
 
 ```bash
 export QT_QWS_FONTDIR=/etc/fonts
+```
+
+## Running On M1
+
+To build the dev enviroment on M1 *you must enable Rosseta x86 Emulation* (settings, in development, beta features).
+Then you have to pull, build and compose the container in serperate steps, adding the platform flag to each step.
+
+Pull the base image:
+
+```bash
+docker pull docker.io/library/ubuntu:18.04 --platform linux/amd64
+```
+
+Build the cortex-dev image:
+
+```bash
+sudo docker build . --platform=linux/amd64 -t cortex-dev
+```
+
+Compose the container:
+
+```bash
+sudo docker compose up -d
 ```
 
 ## Creating an update package
