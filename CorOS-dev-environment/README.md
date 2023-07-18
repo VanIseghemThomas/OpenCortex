@@ -58,26 +58,36 @@ export QT_QWS_FONTDIR=/etc/fonts
 
 ## Running On M1
 
+If you docker enviroment (~/.docker)is not alread accessable by your user, run:
+
+```bash
+sudo chmod -R 777 ~/.docker
+```
+
 To build the dev enviroment on M1 _you must enable Rosseta x86 Emulation_ (Docker Desktop, Settings, In Development, Beta Features).
 Then you have to pull, build and compose the container in seperate steps, adding the platform flag to each step.
 
-Pull the base image:
+Pull the base image for the enviroment you wish to build:
 
 ```bash
-docker pull docker.io/library/ubuntu:18.04 --platform linux/amd64
+CorOS-Emu:
+docker pull docker.io/library/debian:buster-slim --platform linux/amd64
+
+CorOS-Dev:
+
 ```
 
 Build the cortex-emu and cortex-dev images:
 
 ```bash
-sudo docker build . --platform=linux/amd64 -t cortex-emu
-sudo docker build . --platform=linux/amd64 -t cortex-dev
+docker build . --platform=linux/amd64 -t coros-emu
+docker build . --platform=linux/amd64 -t cortex-dev
 ```
 
 Compose the container:
 
 ```bash
-sudo docker compose up -d
+docker compose up -d
 ```
 
 ## Creating an update package
