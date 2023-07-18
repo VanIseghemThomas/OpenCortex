@@ -2,7 +2,7 @@
 
 services:
     coros-dev:
-        image: opencortex/coros-dev:latest
+        image: cortex-dev:latest
         build:
             context: ../
             dockerfile: CorOS-build-env/Dockerfile
