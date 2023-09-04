@@ -4,7 +4,7 @@
 
 You can use the Python tool for downloading the latest firmware. You can find it in this repository under the `Firmware-download` folder. This will download the latest CorOS version from the official NeuralDSP server.
 
-***[Alternative] The old way***
+**_[Alternative] The old way_**
 
 The update process of the QC is done in 2 steps. First the download, after that the install. We can use this to our advantage to grab the actual update file. Once you downloaded the update **do not install it yet.** Get an SSH shell going and go to `/media/p4`. There you will find your update file. A registry of these file names is also available inside the `filesystems/README.md` of this folder.
 
@@ -16,9 +16,11 @@ Once you've got the update file, you can put it inside the `filesystems` directo
 
 **The easier** way is to use `docker compose`. In the `docker-compose.yaml` file, all volumes are already defined. This means you only have to define the update file in the `environment` section.
 
+**[Click here for ARM and M1](#running-on-m1)**
+
 To use this first run the service in detached mode. **Make sure to build the CorOS-emulation container first if you want to use the CorOS-build-env one!**
 
-```
+```bash
 docker compose up -d --build
 ```
 
@@ -26,14 +28,15 @@ After that you can attach to the container using Docker Desktop and running the 
 
 If Docker Desktop isn't your cup of tea, you can always do it the CLI way. First identify the container by running `docker ps` and look for your `opencortex/coros-<target>:latest` containers.
 
-```
+```bash
 CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS          PORTS     NAMES
 e94bc7cd6045   opencortex/coros-emu:latest   "/bin/bash -c 'while…"   5 minutes ago    Up 5 minutes              coros-emulation-coros-emu-1
 a81a4c3249c9   opencortex/coros-dev:latest   "/bin/bash -c 'while…"   41 minutes ago   Up 41 minutes             coros-build-env-coros-dev-1
 ```
 
 Then you can attach to it by running
-```
+
+```bash
 docker compose exec <NAME or CONTAINER ID> /bin/bash
 ```
 
@@ -41,7 +44,7 @@ docker compose exec <NAME or CONTAINER ID> /bin/bash
 
 When attached to the docker container's shell, there is one post-install step left. Run the following command:
 
-```
+```bash
 ./init_system.sh
 ```
 
@@ -53,18 +56,50 @@ To link QT to the right fonts folder, run:
 export QT_QWS_FONTDIR=/etc/fonts
 ```
 
+## Running On M1
+
+If you docker enviroment (~/.docker)is not alread accessable by your user, run:
+
+```bash
+sudo chmod -R 777 ~/.docker
+```
+
+To build the dev enviroment on M1 _you must enable Rosseta x86 Emulation_ (Docker Desktop, Settings, In Development, Beta Features).
+Then you have to pull, build and compose the container in seperate steps, adding the platform flag to each step.
+
+Pull the base image for the enviroment you wish to build:
+
+```bash
+CorOS-Emu:
+docker pull docker.io/library/debian:buster-slim --platform linux/amd64
+
+CorOS-Dev:
+
+```
+
+Build the cortex-emu and cortex-dev images:
+
+```bash
+docker build . --platform=linux/amd64 -t coros-emu
+docker build . --platform=linux/amd64 -t cortex-dev
+```
+
+Compose the container:
+
+```bash
+docker compose up -d
+```
+
 ## Creating an update package
 
 You can create a custom update package based on the mounted filesystem, by running the `update-builder.sh` script. This can be found in the root of the docker container. This way you can patch your update to include all mods and ssh access, without opening the QC up everytime.
 
 The update file should be available on your host machine at `filesystems/update-opencortex.bin.gz`. You can validate the update file by mounting it as the actual update file using the `UPDATE_FILE` environment variable and running `init_system.sh`.
 
-
 ## Config for custom compiled QT
 
 For running GUI applications such as `ZenUI` it is possible to output the video to a virtual device. One of these posibilities is a simple VNC server. To enable this ability I have compiled QT from source using the following config:
 
-```
+```bash
 ./configure -embedded arm -xplatform qws/linux-arm-gnueabi-g++ -nomake examples -nomake demos -opensource -qt-libtiff -qt-zlib -qt-libpng -qt-libmng -qt-libjpeg -optimized-qmake -qt-freetype -qt-gfx-vnc -no-webkit -no-javascript-jit -optimized-qmake -no-cups && make
 ```
-

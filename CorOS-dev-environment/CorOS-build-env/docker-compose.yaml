@@ -1,25 +1,25 @@
 # Docker compose file for easy volume mounting and running of the container
 
 services:
-  coros-dev:
-    image: opencortex/coros-dev:latest
-    build:
-      context: ../
-      dockerfile: CorOS-build-env/Dockerfile
-      tags:
-        - opencortex/coros-dev:latest
+    coros-dev:
+        image: cortex-dev:latest
+        build:
+            context: ../
+            dockerfile: CorOS-build-env/Dockerfile
+            tags:
+                - opencortex/coros-dev:latest
 
-    volumes:
-      - ../filesystems:/qc-fs
-      - ../mount:/mnt
+        volumes:
+            - ../filesystems:/qc-fs
+            - ../mount:/mnt
 
-    environment:
-      # Edit this to your needs. This should be just the file name, not the path.
-      - UPDATE_FILE=verify.bin.gz
+        environment:
+            # Edit this to your needs. This should be just the file name, not the path.
+            - UPDATE_FILE=verify.bin.gz
 
-    # Port forward the VNC port
-    ports:
-      - "5900:5900"  
+        # Port forward the VNC port
+        ports:
+            - "5900:5900"
 
-    privileged: true
-    entrypoint: /bin/bash -c "while true; do sleep 1; done"
+        privileged: true
+        entrypoint: /bin/bash -c "while true; do sleep 1; done"

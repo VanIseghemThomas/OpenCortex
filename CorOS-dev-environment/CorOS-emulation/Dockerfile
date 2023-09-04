@@ -13,10 +13,10 @@ RUN mkdir qc-fs qc-fs-uncompressed qt_src
 
 WORKDIR /qt_src
 # # Copy and run the installer
-COPY qt-compiled-4.8.7.tar.gz install_qt_compiled.sh .
+COPY qt-compiled-4.8.7.tar.gz install_qt_compiled.sh ./
 
 WORKDIR /
-COPY init_system.sh update-builder.sh .
+COPY init_system.sh update-builder.sh ./
 RUN dos2unix init_system.sh update-builder.sh /qt_src/install_qt_compiled.sh
 
 ENTRYPOINT ["/bin/bash"]
