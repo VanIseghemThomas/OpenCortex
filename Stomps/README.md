@@ -22,12 +22,12 @@
 
 It seems that a 32 bytes message is divided into 2 parts of 16 bytes.
 
-### Part 1 (First 16 bytes)
+### Part 1 (first 16 bytes)
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10     | 11     | 12    | 13      | 14      | 15      |
 |---|---|---|---|---|---|---|---|---|---|--------|--------|-------|---------|---------|---------|
-| time | time | time | time | time | time | time | padding? | action | action | action | action | value | padding | padding | padding |
+| time | time | time | time | time | time | time | padding? | action | action (not really used) | action | action | value | padding | padding | padding |
 
-### Part 1 (First 16 bytes)
+### Part 1 (last 16 bytes)
 - 0 -> 6 are duplicates
 - 7 -> 15 are padding
 
