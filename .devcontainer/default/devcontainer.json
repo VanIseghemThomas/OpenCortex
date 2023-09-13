@@ -7,7 +7,6 @@
       "UPDATE_FILE": "update-dYOaOKRKVdwFYyN2bb4KCKkl5Wjc1hg6.bin.gz"
     },
     "forwardPorts": [5900],
-    "postCreateCommand": "/bin/bash /init_system.sh",
     "postStartCommand": "/bin/bash /init_system.sh",
     "shutdownAction": "stopCompose"
   }
