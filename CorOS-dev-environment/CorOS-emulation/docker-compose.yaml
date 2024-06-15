@@ -12,7 +12,7 @@ services:
         volumes:
             - ../filesystems:/qc-fs
             - ../mount:/mnt
-
+            
         environment:
             # Edit this to your needs. This should be just the file name, not the path.
             - UPDATE_FILE=update-v6_MZO3_RudwwcoQAF3iLtPQ0ERwy4w6.bin.gz

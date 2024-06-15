@@ -43,8 +43,8 @@ mount --bind /etc/resolv.conf $QEMU_LD_PREFIX/etc/resolv.conf
 
 echo "Creating /media/p4"
 mkdir -p $QEMU_LD_PREFIX/media/p4
-echo "Creating /media/ext and mounting host /mnt on it"
-mkdir -p $QEMU_LD_PREFIX/media/ext && mount --bind /mnt $QEMU_LD_PREFIX/media/ext
+echo "Creating /media/host and mounting host /mnt on it"
+mkdir -p $QEMU_LD_PREFIX/media/host && mount --bind /mnt $QEMU_LD_PREFIX/media/host
 echo ""
 
 # Promt the user to install custom QT
@@ -71,3 +71,4 @@ then
     chroot $QEMU_LD_PREFIX sh -c "uname -a" && chroot $QEMU_LD_PREFIX/
     echo ""
 fi
+

@@ -1,4 +1,5 @@
 # This script will take the ModelRepo.xml file and rename the models based on the trademark
+# This is not supposed to be used on the QC, it's the script used to create the ModelRepo.xml file's in this repository
 
 import argparse
 import json

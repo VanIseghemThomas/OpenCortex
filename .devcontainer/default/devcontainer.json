@@ -1,0 +1,13 @@
+{
+    "name": "CorOS Default",
+    "workspaceFolder": "/opt/ARM/sysroot",
+    "dockerComposeFile": ["../../CorOS-dev-environment/CorOS-emulation/docker-compose.yaml"],
+    "service": "coros-emu",
+    "containerEnv": {
+      "UPDATE_FILE": "update-dYOaOKRKVdwFYyN2bb4KCKkl5Wjc1hg6.bin.gz"
+    },
+    "forwardPorts": [5900],
+    "postStartCommand": "/bin/bash /init_system.sh",
+    "shutdownAction": "stopCompose"
+  }
+  
