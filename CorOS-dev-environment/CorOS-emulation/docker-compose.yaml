@@ -1,25 +1,25 @@
 # Docker compose file for easy volume mounting and running of the container
 
 services:
-  coros-emu:
-    image: opencortex/coros-emu:latest
-    build:
-      context: ../
-      dockerfile: CorOS-emulation/Dockerfile
-      tags:
-        - opencortex/coros-emu:latest
+    coros-emu:
+        image: opencortex/coros-emu:latest
+        build:
+            context: ../
+            dockerfile: CorOS-emulation/Dockerfile
+            tags:
+                - opencortex/coros-emu:latest
 
-    volumes:
-      - ../filesystems:/qc-fs
-      - ../mount:/mnt
+        volumes:
+            - ../filesystems:/qc-fs
+            - ../mount:/mnt
+            
+        environment:
+            # Edit this to your needs. This should be just the file name, not the path.
+            - UPDATE_FILE=update-v6_MZO3_RudwwcoQAF3iLtPQ0ERwy4w6.bin.gz
 
-    environment:
-      # Edit this to your needs. This should be just the file name, not the path.
-      - UPDATE_FILE=update-dYOaOKRKVdwFYyN2bb4KCKkl5Wjc1hg6.bin.gz
-    
-    # Port forward the VNC port
-    ports:
-      - "5900:5900"
+        # Port forward the VNC port
+        ports:
+            - "5900:5900"
 
-    privileged: true
-    entrypoint: /bin/bash -c "while true; do sleep 1; done"
+        privileged: true
+        entrypoint: /bin/bash -c "while true; do sleep 1; done"
