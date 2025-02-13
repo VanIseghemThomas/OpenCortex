@@ -1,4 +1,5 @@
 # OpenCortex
+Disclaimer: this is all pre-CorOS 3. Has not been updated past that, so milage may vary.
 
 [![Discord Banner 1](https://discordapp.com/api/guilds/1064519311567360031/widget.png?style=banner2)](https://discord.gg/ef2gBDDSkm)
 
