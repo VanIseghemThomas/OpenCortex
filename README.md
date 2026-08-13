@@ -17,9 +17,15 @@ I am not responsible for any damage that might be done to your unit, software. D
 
 **Here I want to make clear we are willing to go into open dialog and plan to be 100% transparent about everything as we strongly believe we can provide some very valuable knowledge and advise. This only benefits all of us, including the community, which is the #1 priority. If at any point this project steps over any line, feel free to contact us.**
 
+## Related projects
+
+[pyquadcortex](https://github.com/stokes-audio/pyquadcortex) - control the QC from Python over
+USB: presets, scenes, grid editing, global settings. Actively maintained, CorOS 4.x.
+
 ## Table of contents
 
 - [Summary](#summary)
+- [Related projects](#related-projects)
 - [Opening a shell and gaining root access](#opening-a-shell-and-gaining-root-access)
 - [File access](#file-access)
 - [Editing the default model names](docs/consumer/Model_Renamer.md)
